@@ -1,0 +1,21 @@
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+/*
+576
+768
+992
+1200
+1 rem = 16px
+
+dorado #C8A31A
+rosa 
+*/

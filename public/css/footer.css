@@ -1,0 +1,23 @@
+/*INICIO FOOTER*/
+footer p {
+    font-weight: 400;
+    font-size: 0.7rem;
+    text-align: center;
+    line-height: 1.3rem;
+  }
+  
+  footer h4 {
+    text-align: center;
+    color: #C8A31A;
+  }
+  
+  footer #footer1 {
+    background-color: #F7E1DC;
+    padding: 10px;
+  }
+  
+  footer #footer2 {
+    padding: 10px;
+    background-color: #C6B4B0;
+  }
+  /*FIN FOOTER*/
