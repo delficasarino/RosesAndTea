@@ -1,26 +1,32 @@
-#mobile-header {
+header {
     display: flex;
-    width: 100%;
-    flex-wrap: nowrap;
+    width: 90vw;
+    display: flex;
+    margin: auto;
+}
+
+header #navbar-center {
+    display: flex;
+    width: 70vw;
+}
+
+header #navbar-center figure {
+    display: flex;
     justify-content: center;
-}
-
-#mobile-header img{
-    width: 60%; 
-    border-radius: 100%;
-}
-
-#mobile-header figure{
-    display: flex;
-    width: 100%;
-    justify-content: flex-end; 
-}
-
-#mobile-header nav {
-    display: flex;
-    width: 50%;
     align-items: center;
-    justify-content: center;
+    width: 60vw;
+}
+
+header img {
+    max-width: 150px;
+    border-radius: 50%;
+}
+
+header #burger-menu {
+    display: flex;
+    width: 40vw;
+    justify-content: flex-start;
+    align-items: center;
 }
 
 .fa-bars {
@@ -32,51 +38,93 @@
     font-size: 1.8rem;
 }
 
-#main-navbar{
+#navbar-left {
     display: none;
-  }
+}
 
+#navbar-right {
+    display: none;
+}
 
-  /*** TABLETS ***/
+/*** TABLETS ***/
 @media screen and (min-width: 768px) {    
-    #mobile-header {
+    header #burger-menu {
         display: none;
     }   
 
     #main-navbar {
         display: flex;
-        width: 90%;
+        width: 90vw;
         margin: auto;
+        position: relative;
+        font-size: 0.8rem;
+        text-align: center;
+        margin-top: 1.5rem;
     }
 
     li {
         padding: 1rem;
+        transition: all 400ms ease-in-out;
+    }
+
+    li:hover{
+        color: #C8A31A;
+        background-color: #F7E1DC;
+        border: none;
+        border-radius: 2.5rem;
+    }
+
+    li:hover a{
+        color: #C8A31A;
+        font-weight: 700;
     }
 
     li a{
         text-decoration: none;
         color: grey;
         text-align: center;
+        line-height: 1rem; 
     }
  
     #navbar-left {
         display: inline-flex;
-        width: 50%;  
-        margin-top: 0.5rem;    
+        width: 40vw;  
+        align-content: center;
         justify-content: flex-start;
     }
 
+    header #navbar-center {
+        display: flex;
+        width: 20vw;
+        justify-content: center;
+    }
+    
+    header #navbar-center figure {
+        position: absolute;
+        top: 0vw;
+        left: 35vw;
+        width: 20vw;
+    }
+
+    header img {
+        max-width: 130px;
+    }
     
     #navbar-right {
         display: inline-flex;
-        width: 50%;
+        width: 40vw;  
         align-content: center;
-        margin-top: 0.5rem;
         justify-content: flex-end;
     }
+}
 
-    #navbar-right li {
-        display: inline-flex;
+/*** PC ***/
+@media screen and (min-width: 1200px) {      
+    header img {
+        max-width: 150px;
     }
-
+    li {
+        margin: 1rem;
+    }
+    
 }
