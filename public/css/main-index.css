@@ -1,7 +1,110 @@
+main {
+  display: flex;
+  width: 100vw;
+  flex-flow: column wrap;
+}
+
+#carrousel {
+  display: flex;
+  width: 100vw;
+  height: 400px; /*cuando se haga el carrousel sacar la altura*/
+  background: #F7E1DC;
+}
+
 h1 {
     color: #C8A31A;
     text-align: center;
     font-size: 1.5rem;
     font-weight: bold;
+    position: relative;
+  }
+
+.title-line-left {
+  width: 10vw;
+  border: #F7E1DC solid 1rem;
+  position: absolute;
+  left: 10vw;
+  top: 0vw;
+  flex: block;
+}
+
+.title-line-right {
+  width: 10vw;
+  border: #F7E1DC solid 1rem;
+  position: absolute;
+  right: 10vw;
+  top: 0vw;
+  flex: block;
+}
+
+figure video {
+  width: 100vw;
+}
+
+#galeria-home {
+  display: flex;
+  flex-flow: row wrap;
+  width: 70vw;
+  margin: auto;
+}
+
+#galeria-home img{
+  width: 100%;
+  padding: 0.3rem;
+}
+
+#img-principal {
+  width: 50%;
+  display: flex;
+}
+
+#img-secundaria {
+  width: 50%;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.pic-2, .pic-3 {
+  width: 50%;
+  height: 50%;
+  display: flex;
+}
+
+.pic-4 {
+  width: 100%;
+  width: 100%;
+  display: flex;
+}
+
+@media screen and (min-width: 768px) { 
+
+  .title-line-left {
+    left: 25vw;
   }
   
+  .title-line-right {
+    right: 25vw;
+  }
+
+#galeria-home figure {
+  box-shadow: none;
+transition: all 400ms ease-in-out;
+}
+
+#galeria-home figure:hover {
+  box-shadow: 0px 0px 10px rgb(100, 100, 100);
+  }
+
+}
+
+@media screen and (min-width: 120px) { 
+
+  .title-line-left {
+    left: 30vw;
+  }
+  
+  .title-line-right {
+    right: 30vw;
+  }
+
+}

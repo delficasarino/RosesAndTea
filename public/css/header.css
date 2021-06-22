@@ -1,13 +1,13 @@
 header {
     display: flex;
-    width: 90vw;
-    display: flex;
-    margin: auto;
+    width: 100vw;
+
 }
 
 header #navbar-center {
     display: flex;
     width: 70vw;
+    height: 100px;
 }
 
 header #navbar-center figure {
@@ -15,6 +15,9 @@ header #navbar-center figure {
     justify-content: center;
     align-items: center;
     width: 60vw;
+    position: absolute;
+    top: 2vw;
+    left: 5vw;
 }
 
 header img {
@@ -62,24 +65,24 @@ header #burger-menu {
         margin-top: 1.5rem;
     }
 
-    li {
+    #main-navbar li {
         padding: 1rem;
         transition: all 400ms ease-in-out;
     }
 
-    li:hover{
+    #main-navbar li:hover{
         color: #C8A31A;
         background-color: #F7E1DC;
         border: none;
         border-radius: 2.5rem;
     }
 
-    li:hover a{
+    #main-navbar li:hover a{
         color: #C8A31A;
         font-weight: 700;
     }
 
-    li a{
+    #main-navbar li a{
         text-decoration: none;
         color: grey;
         text-align: center;
@@ -90,6 +93,7 @@ header #burger-menu {
         display: inline-flex;
         width: 40vw;  
         align-content: center;
+        align-items: center;
         justify-content: flex-start;
     }
 
@@ -114,6 +118,7 @@ header #burger-menu {
         display: inline-flex;
         width: 40vw;  
         align-content: center;
+        align-items: center;
         justify-content: flex-end;
     }
 }
@@ -123,8 +128,9 @@ header #burger-menu {
     header img {
         max-width: 150px;
     }
-    li {
+    #main-navbar li {
         margin: 1rem;
+
     }
     
 }

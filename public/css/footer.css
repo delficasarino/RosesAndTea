@@ -1,4 +1,11 @@
 /*INICIO FOOTER*/
+footer {
+  width: 100vw;
+  display: flex;
+  flex-flow: column wrap;
+  margin-top: 2rem;
+}
+
 footer p {
     font-weight: 400;
     font-size: 0.7rem;
@@ -6,18 +13,62 @@ footer p {
     line-height: 1.3rem;
   }
   
-  footer h4 {
-    text-align: center;
+footer h4 {
     color: #C8A31A;
+    margin: 1rem 0;
+    font-weight: 700;
   }
   
-  footer #footer1 {
+#footer1 {
     background-color: #F7E1DC;
-    padding: 10px;
+    display: flex;
+    flex-flow: column wrap;
+    width: 100vw;
+    justify-content: center;
+    align-content: center;
+    padding: 2rem;
+    margin: auto;
   }
-  
-  footer #footer2 {
+
+
+#footer1 article{
+  width: 100vw;
+  display: flex;
+  flex-flow: column wrap;
+  margin-bottom: 2rem;
+  align-items: center;
+  }
+
+footer #footer2 {
     padding: 10px;
     background-color: #C6B4B0;
+    display: flex;
+    flex-flow: column wrap;
   }
-  /*FIN FOOTER*/
+
+/*** PC ***/
+@media screen and (min-width: 768px) {      
+  #footer1 {
+    flex-flow: row wrap;
+
+  }
+
+#footer1 article{
+  width: 40vw;
+  }
+
+}
+
+/*** PC ***/
+@media screen and (min-width: 1200px) {      
+  #footer1 {
+    flex-flow: row wrap;
+
+  }
+
+#footer1 article{
+  width: 20vw;
+  }
+
+  
+}
