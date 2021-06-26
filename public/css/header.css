@@ -80,6 +80,7 @@ header #burger-menu {
         line-height: 1rem; 
         padding: 1rem;
         transition: all 400ms ease-in-out;
+        display: flex;
     }
 
     #main-navbar li:hover a{

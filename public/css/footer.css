@@ -72,8 +72,13 @@ footer #footer-second-section {
 
   }
 
+  #footer-first-section article{
+    flex-flow: column wrap;
+  }
+
+
   #footer-first-section figure img {
-    width: 70%;
+    width: 100%;
   }
 
 #footer-first-section article{
