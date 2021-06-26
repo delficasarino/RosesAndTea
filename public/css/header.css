@@ -1,13 +1,24 @@
 header {
     display: flex;
     width: 100vw;
+    background: white;
+    position: fixed;
+    top:0vw;
+    z-index: 1;
+}
 
+#main-navbar {
+    display: flex;
+    width: 90vw;
+    margin: auto;
+    height: 95px; 
+    align-items: flex-end;
+    padding-bottom: 0.6rem;
 }
 
 header #navbar-center {
     display: flex;
     width: 70vw;
-    height: 100px;
 }
 
 header #navbar-center figure {
@@ -28,13 +39,12 @@ header img {
 header #burger-menu {
     display: flex;
     width: 40vw;
-    justify-content: flex-start;
     align-items: center;
 }
 
 .fa-bars {
     background-color: #F7E1DC;
-    padding: 10px;
+    padding: 0.8rem;
     border: #C8A31A solid 0.03rem;
     border-radius: 5px;
     color: #C8A31A;
@@ -56,39 +66,30 @@ header #burger-menu {
     }   
 
     #main-navbar {
-        display: flex;
-        width: 90vw;
-        margin: auto;
         position: relative;
         font-size: 0.8rem;
         text-align: center;
-        margin-top: 1.5rem;
+        margin-top: 0.3rem;
+
     }
 
-    #main-navbar li {
-        padding: 1rem;
-        transition: all 400ms ease-in-out;
-    }
-
-    #main-navbar li:hover{
-        color: #C8A31A;
-        background-color: #F7E1DC;
-        border: none;
-        border-radius: 2.5rem;
-    }
-
-    #main-navbar li:hover a{
-        color: #C8A31A;
-        font-weight: 700;
-    }
-
-    #main-navbar li a{
+    #main-navbar li a {
         text-decoration: none;
         color: grey;
         text-align: center;
         line-height: 1rem; 
+        padding: 1rem;
+        transition: all 400ms ease-in-out;
     }
- 
+
+    #main-navbar li:hover a{
+        color: #C8A31A;
+        background-color: #F7E1DC;
+        border: none;
+        border-radius: 2.5rem;
+        font-weight: 700;
+    }
+
     #navbar-left {
         display: inline-flex;
         width: 40vw;  
@@ -126,11 +127,11 @@ header #burger-menu {
 /*** PC ***/
 @media screen and (min-width: 1200px) {      
     header img {
-        max-width: 150px;
+        max-width: 140px;
     }
+    
     #main-navbar li {
         margin: 1rem;
-
     }
     
 }

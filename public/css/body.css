@@ -1,6 +1,6 @@
 body {
   font-family: 'Lato', sans-serif;
-  overflow-x: hidden;
+overflow-x: hidden; 
   width: 100vw;
 }
 
@@ -9,15 +9,3 @@ body {
   margin: 0;
   padding: 0;
 }
-
-
-/*
-576
-768
-992
-1200
-1 rem = 16px
-
-dorado #C8A31A
-rosa 
-*/

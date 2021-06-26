@@ -1,6 +1,6 @@
 /*INICIO FOOTER*/
 footer {
-  width: 100vw;
+  width: 90vw;
   display: flex;
   flex-flow: column wrap;
   margin-top: 2rem;
@@ -19,7 +19,7 @@ footer h4 {
     font-weight: 700;
   }
   
-#footer1 {
+#footer-first-section {
     background-color: #F7E1DC;
     display: flex;
     flex-flow: column wrap;
@@ -31,7 +31,9 @@ footer h4 {
   }
 
 
-#footer1 article{
+
+
+#footer-first-section article{
   width: 100vw;
   display: flex;
   flex-flow: column wrap;
@@ -39,7 +41,7 @@ footer h4 {
   align-items: center;
   }
 
-footer #footer2 {
+footer #footer-second-section {
     padding: 10px;
     background-color: #C6B4B0;
     display: flex;
@@ -48,12 +50,16 @@ footer #footer2 {
 
 /*** PC ***/
 @media screen and (min-width: 768px) {      
-  #footer1 {
+  #footer-first-section {
     flex-flow: row wrap;
 
   }
 
-#footer1 article{
+  #footer-first-section figure img {
+    width: 20vw;
+  } 
+
+#footer-first-section article{
   width: 40vw;
   }
 
@@ -61,12 +67,16 @@ footer #footer2 {
 
 /*** PC ***/
 @media screen and (min-width: 1200px) {      
-  #footer1 {
+  #footer-first-section {
     flex-flow: row wrap;
 
   }
 
-#footer1 article{
+  #footer-first-section figure img {
+    width: 70%;
+  }
+
+#footer-first-section article{
   width: 20vw;
   }
 

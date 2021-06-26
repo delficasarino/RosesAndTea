@@ -1,4 +1,5 @@
 main {
+  margin-top: 95px;
   display: flex;
   width: 100vw;
   flex-flow: column wrap;
@@ -11,7 +12,10 @@ main {
   background: #F7E1DC;
 }
 
-h1 {
+#home-video h1, #home-gallery h1 {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
     color: #C8A31A;
     text-align: center;
     font-size: 1.5rem;
@@ -21,11 +25,13 @@ h1 {
 
 .title-line-left {
   width: 10vw;
-  border: #F7E1DC solid 1rem;
+/*   border: #F7E1DC solid 1rem; */
   position: absolute;
-  left: 10vw;
-  top: 0vw;
-  flex: block;
+  display: flex;
+
+  background: #F7E1DC;
+  height: 2rem;
+  border: none;
 }
 
 .title-line-right {
@@ -38,17 +44,19 @@ h1 {
 }
 
 figure video {
+  display: flex;
+  width: 100vw;
   width: 100vw;
 }
 
-#galeria-home {
+#gallery {
   display: flex;
   flex-flow: row wrap;
   width: 70vw;
   margin: auto;
 }
 
-#galeria-home img{
+#gallery img{
   width: 100%;
   padding: 0.3rem;
 }
@@ -86,12 +94,12 @@ figure video {
     right: 25vw;
   }
 
-#galeria-home figure {
+#gallery figure {
   box-shadow: none;
 transition: all 400ms ease-in-out;
 }
 
-#galeria-home figure:hover {
+#gallery figure:hover {
   box-shadow: 0px 0px 10px rgb(100, 100, 100);
   }
 
