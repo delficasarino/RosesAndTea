@@ -10,6 +10,7 @@
 	<link rel="stylesheet" href="/css/reset.css">
 	<link rel="stylesheet" href="/css/normalize.css">
 	<link rel="stylesheet" href="/css/header.css">
+	<link rel="stylesheet" href="/css/carousel.css">
 	<link rel="stylesheet" href="/css/main-index.css">
 	<link rel="stylesheet" href="/css/footer.css">
 	<link rel="stylesheet" href="/css/body.css">
@@ -38,8 +39,101 @@
 		</nav>
 	</header>
 	<main>
-		<section id="carrousel">
+		<section class="slideshow-container">
+
+			<article class="mySlides fade">
+			  	<figure>
+					<img src="/img/home/tuttoperlafesta.jpeg" style="width:100vw">
+			  	</figure>
+			  	<section class="text">
+					<p class="tituloCarousel">TUTTO PER LA TUA FESTA</p>
+					<p>Rendi la tua festa speciale con noi.</p>
+					<p>Organizziamo feste su misura per te.</p>
+				</section>
+			</article>
+			
+			<article class="mySlides ">
+				<figure class="fade">
+				  	<img src="/img/home/unpostomagico.jpg" style="width:100vw">
+				</figure>
+				<section class="text">
+					<p class="tituloCarousel">UN POSTO MAGICO</p>
+					<p>Da Roses And Tea è sempre primavera.</p>
+					<p>Visita un posto con un’ atmosfera meravigliosa.</p>
+			  </section>
+			</article>
+			
+			<article class="mySlides">
+				<figure class="fade">
+				  	<img src="/img/home/letuetorte.jpg" style="width:100vw">
+				</figure>
+				<section class="text">
+					<p class="tituloCarousel">LE TUE TORTE PREFERITE</p>
+					<p>Hai un evento speciale?</p>
+					<p>Noi ti aiutiamo a realizzare la torta dei tuoi sogni.</p>
+			  </section>
+			</article>
+
+			<article class="mySlides">
+				<figure class="fade">
+				  	<img src="/img/home/IMG_3913 2.jpeg" style="width:100vw">
+				</figure>
+				<section class="text">
+					<p class="tituloCarousel">AFTERNOON TEA</p>
+					<p>Il nostro afternoon tea e perfetto per tutte le tue celebrazioni</p>
+			  </section>
+			</article>
+
+			<article class="mySlides">
+				<figure class="fade">
+				  	<img src="/img/home/IMG_5159.jpeg" style="width:100vw">
+				</figure>
+				<section class="text">
+					<p class="tituloCarousel">BRUNCH ALWAYS IS A GOOD IDEA</p>
+					<p>Un Brunch fresco e variegato da gustare in compagnia di famiglia e amici in una magica atmosfera.</p>
+			  </section>
+			</article>
+			
+			<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+			<a class="next" onclick="plusSlides(1)">&#10095;</a>
+			
 		</section>
+			
+			<div style="text-align:center">
+			  <span class="dot" onclick="currentSlide(1)"></span> 
+			  <span class="dot" onclick="currentSlide(2)"></span> 
+			  <span class="dot" onclick="currentSlide(3)"></span> 
+			  <span class="dot" onclick="currentSlide(4)"></span> 
+			  <span class="dot" onclick="currentSlide(5)"></span> 
+			</div>
+			<script>
+				var slideIndex = 1;
+				showSlides(slideIndex);
+	
+				function plusSlides(n) {
+				showSlides(slideIndex += n);
+				}
+	
+				function currentSlide(n) {
+				showSlides(slideIndex = n);
+				}
+	
+				function showSlides(n) {
+				var i;
+				var slides = document.getElementsByClassName("mySlides");
+				var dots = document.getElementsByClassName("dot");
+				if (n > slides.length) {slideIndex = 1}    
+				if (n < 1) {slideIndex = slides.length}
+				for (i = 0; i < slides.length; i++) {
+					slides[i].style.display = "none";  
+				}
+				for (i = 0; i < dots.length; i++) {
+					dots[i].className = dots[i].className.replace(" active", "");
+				}
+				slides[slideIndex-1].style.display = "block";  
+				dots[slideIndex-1].className += " active";
+				}
+			</script>	
 		<section id="home-video">
 			<h2>
 				ROSES & TEA<br>PARTIES
@@ -105,5 +199,8 @@
 			<p>rosesandteaofficial.com</p>
 		</section>
 	</footer>
+	
+
 </body>
+
 </html>

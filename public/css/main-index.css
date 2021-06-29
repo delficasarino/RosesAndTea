@@ -5,12 +5,12 @@ main {
   flex-flow: column wrap;
 }
 
-#carrousel {
+/* #carrousel {
   display: flex;
   width: 100vw;
-  height: 400px; /*cuando se haga el carrousel sacar la altura*/
+  height: 400px; 
   background: #F7E1DC;
-}
+} */
 
 #home-video h2, #home-gallery h2 {
     display: flex;
