@@ -43,7 +43,7 @@
 
 			<article class="mySlides fade">
 			  	<figure>
-					<img src="/img/home/tuttoperlafesta.jpeg" style="width:100vw">
+					<img src="/img/home/tuttoperlafesta.jpeg">
 			  	</figure>
 			  	<section class="text">
 					<p class="tituloCarousel">TUTTO PER LA TUA FESTA</p>
@@ -54,7 +54,7 @@
 			
 			<article class="mySlides ">
 				<figure class="fade">
-				  	<img src="/img/home/unpostomagico.jpg" style="width:100vw">
+				  	<img src="/img/home/unpostomagico.jpg">
 				</figure>
 				<section class="text">
 					<p class="tituloCarousel">UN POSTO MAGICO</p>
@@ -65,7 +65,7 @@
 			
 			<article class="mySlides">
 				<figure class="fade">
-				  	<img src="/img/home/letuetorte.jpg" style="width:100vw">
+				  	<img src="/img/home/letuetorte.jpg">
 				</figure>
 				<section class="text">
 					<p class="tituloCarousel">LE TUE TORTE PREFERITE</p>
@@ -76,7 +76,7 @@
 
 			<article class="mySlides">
 				<figure class="fade">
-				  	<img src="/img/home/IMG_3913 2.jpeg" style="width:100vw">
+				  	<img src="/img/home/IMG_3913 2.jpeg">
 				</figure>
 				<section class="text">
 					<p class="tituloCarousel">AFTERNOON TEA</p>
@@ -86,7 +86,7 @@
 
 			<article class="mySlides">
 				<figure class="fade">
-				  	<img src="/img/home/IMG_5159.jpeg" style="width:100vw">
+				  	<img src="/img/home/IMG_5159.jpeg">
 				</figure>
 				<section class="text">
 					<p class="tituloCarousel">BRUNCH ALWAYS IS A GOOD IDEA</p>
@@ -95,17 +95,17 @@
 			</article>
 			
 			<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-			<a class="next" onclick="plusSlides(1)">&#10095;</a>
-			
+			<a class="next" onclick="plusSlides(1)">&#10095;</a> 
+
+ 			<article class="dots">
+				<span class="dot" onclick="currentSlide(1)"></span> 
+				<span class="dot" onclick="currentSlide(2)"></span> 
+				<span class="dot" onclick="currentSlide(3)"></span> 
+				<span class="dot" onclick="currentSlide(4)"></span> 
+				<span class="dot" onclick="currentSlide(5)"></span> 
+			</article>	
 		</section>
-			
-			<div style="text-align:center">
-			  <span class="dot" onclick="currentSlide(1)"></span> 
-			  <span class="dot" onclick="currentSlide(2)"></span> 
-			  <span class="dot" onclick="currentSlide(3)"></span> 
-			  <span class="dot" onclick="currentSlide(4)"></span> 
-			  <span class="dot" onclick="currentSlide(5)"></span> 
-			</div>
+				
 			<script>
 				var slideIndex = 1;
 				showSlides(slideIndex);
@@ -134,9 +134,10 @@
 				dots[slideIndex-1].className += " active";
 				}
 			</script>	
+			
 		<section id="home-video">
-			<h2>
-				ROSES & TEA<br>PARTIES
+			<h2 class="homeTitle">
+				ROSES & TEA PARTIES
 			</h2>
 			<figure>
 				<video controls>
@@ -145,8 +146,8 @@
 			</figure>
 		</section>
 		<section id="home-gallery">
-			<h2>
-				IL NOSTRO<br>LOCALE
+			<h2 class="homeTitle">
+				IL NOSTRO LOCALE
 			</h2>
 			<article id="gallery">
 				<section id="img-principal">
