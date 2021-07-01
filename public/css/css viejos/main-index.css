@@ -70,14 +70,14 @@ main {
 
 @media screen and (min-width: 768px) { 
 
-  .title-line-left {
+/*   .title-line-left {
     left: 25vw;
   }
   
   .title-line-right {
     right: 25vw;
   }
-
+ */
 #gallery figure {
   box-shadow: none;
 transition: all 400ms ease-in-out;
@@ -91,12 +91,12 @@ transition: all 400ms ease-in-out;
 
 @media screen and (min-width: 120px) { 
 
-  .title-line-left {
+/*   .title-line-left {
     left: 30vw;
   }
   
   .title-line-right {
     right: 30vw;
-  }
+  } */
 
 }
