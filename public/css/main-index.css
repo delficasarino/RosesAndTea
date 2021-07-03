@@ -1,3 +1,56 @@
 main {
     margin-top: 82px;
 }
+
+.homeTitle {
+    width: 100%;
+    color: #C8A31A;
+    text-shadow: 3px 2px 1px #F7E1DC;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 2rem 0 1rem 0;
+}
+
+#home-video figure {
+    width: 100%;
+  }
+
+#home-video figure video {
+    width: 100%;
+}
+
+#gallery {
+    display: flex;
+    flex-flow: row wrap;
+    width: 70vw;
+    margin: auto;
+}
+  
+#gallery img{
+    width: 100%;
+    padding: 0.3rem;
+}
+  
+#img-principal {
+    width: 50%;
+    display: flex;
+}
+  
+#img-secundaria {
+    width: 50%;
+    display: flex;
+    flex-flow: row wrap;
+}
+  
+.pic-2, .pic-3 {
+    width: 50%;
+    height: 50%;
+    display: flex;
+}
+  
+.pic-4 {
+    width: 100%;
+    width: 100%;
+    display: flex;
+}

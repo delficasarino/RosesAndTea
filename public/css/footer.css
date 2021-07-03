@@ -1,9 +1,11 @@
 /*INICIO FOOTER*/
 footer {
-  width: 90vw;
+  width: 100%;
   display: flex;
   flex-flow: column wrap;
+  margin: auto ;
   margin-top: 2rem;
+  background-color: #F7E1DC;
 }
 
 footer p {
@@ -20,10 +22,10 @@ footer h4 {
   }
   
 #footer-first-section {
-    background-color: #F7E1DC;
+
     display: flex;
     flex-flow: column wrap;
-    width: 100vw;
+    width: 90vw;
     justify-content: center;
     align-content: center;
     padding: 2rem;
