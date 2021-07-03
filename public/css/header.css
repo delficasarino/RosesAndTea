@@ -7,8 +7,11 @@ header {
     width: 100%;
     flex-flow: row wrap;
     position: fixed;
+    top: 0vw;
+    left: 0vw;
     padding: 1rem 0;
     background-color: #fff;
+    z-index: 1;
 }
 
 #navbar-center {
@@ -21,8 +24,8 @@ header {
     max-width: 137px;
     border-radius: 50%;
     position: absolute;
-    top: 1vw;
-    left: 42%;
+    top: 0.5vw;
+    left: 25%;
 }
 
 #burger-menu {
@@ -119,6 +122,6 @@ header {
     #navbar-center img{
         max-width: 137px;
         border-radius: 50%;
-        left: 42%;
+        left: 43vw;
     }
 }
