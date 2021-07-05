@@ -23,7 +23,7 @@ main {
 #gallery {
     display: flex;
     flex-flow: row wrap;
-    width: 70vw;
+    width: 90vw;
     margin: auto;
 }
   
@@ -57,11 +57,14 @@ main {
 
 @media screen and (min-width: 768px){
     #gallery {
+        width: 70vw;
+    }
+
+    #gallery figure{
         transition: all 0.4s ease-in-out;
     }
     
     #gallery figure:hover{
         box-shadow: 0 0 20px 2px #C8A31A;
-        
     }
 }

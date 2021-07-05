@@ -47,6 +47,7 @@ img {vertical-align: middle;}
         width: 100%;
         text-align: center;
         padding: 0 3rem;
+        text-shadow: 3px 2px 1px #F7E1DC;
 }
 
 .tituloCarousel {
@@ -59,7 +60,7 @@ img {vertical-align: middle;}
 .dots {
     position: absolute;
     bottom: 5vw;
-    left: 40%;
+    left: 35%;
     }
 
 .dot {
