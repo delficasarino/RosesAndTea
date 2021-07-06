@@ -1,0 +1,70 @@
+main {
+    margin-top: 82px;
+    background-color: #F7E1DC;
+    display: flex;
+    flex-direction: column;
+}
+
+main section {
+    display: flex;
+    flex-direction: column;
+    padding-top: 70px;
+    width: 90vw;
+    margin: auto;
+}
+
+main p {
+    font-size: 1rem;
+    line-height: 1.4rem;
+    text-align: center;
+}
+
+main button  {
+    border: none;
+    background-color: transparent;
+    margin: 2rem 0;
+}
+
+main button a{
+    border: none;
+    background-color: #F7E1DC;
+    color: #C8A31A;
+    border-radius: 1rem;
+    padding: 0.5rem;
+    font-weight: 700;
+    margin-top: 1.3rem;
+    font-size: 0.9rem;
+    transition: all .4s ease-in-out;
+    width: auto;
+    align-self: center;
+    text-decoration: none;
+    color: grey
+}
+
+main button:hover a{
+    background-color: #C8A31A;
+    color: #F7E1DC;
+    border-radius: 1.5rem;
+    padding: 0.5rem; 
+}  
+
+.destacado {
+    margin-top: 2rem;
+    color: #C8A31A;
+    font-weight: 700;
+}
+
+@media screen and (min-width: 768px) {
+    main section {
+        width: 70vw;
+    }
+    
+}
+
+@media screen and (min-width: 1200px) {
+    main section {
+
+        width: 50vw;
+    }
+    
+}

@@ -166,14 +166,14 @@ main .catalogo button:hover {
         flex-flow: row wrap;
         width: 100%;
         margin-top: 160px;
-        justify-content: space-evenly;
+        justify-content: center;
     }
 
     main .catalogo{
 /*         display: flex;
         flex-flow: row wrap; */
         height: 20vw;
-        width: 35vw; 
+        width: 34vw; 
         margin: 1rem;
         justify-content: center;
     }
