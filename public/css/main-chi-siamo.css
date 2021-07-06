@@ -1,50 +1,88 @@
 main {
-    margin-top: 160px;
+    margin-top: 82px;
 }
 
 .img-rounded {
     border-radius: 50%;
     width: 40vw;
+    border: #C8A31A .05rem solid;
 }
 
-main section {
+.chisiamoFlorencia {
     display: flex;
-    width: 80vw;
+    width: 100vw;
     flex-direction: column;
     align-items: center;
     margin: auto;
     margin-bottom: 2rem;
+    text-align: center;
+    color: grey;
+    font-size: 1rem;
+    line-height: 1.4rem;
+    padding: .5rem;
+    background: #F7E1DC;
+/*     width: 100%; */
+    padding-top: 4rem;
 }
 
-main section article{
+.chisiamoFlorencia article p{
+    margin: .5rem 1rem;
+}
+
+.destacado {
+    color: #C8A31A;
+    font-weight: 700;
+}
+
+.chisiamoTeam {
     display: flex;
-    width: 60vw;
+    width: 90vw;
     flex-direction: column;
     align-items: center;
     margin: auto;
     text-align: center;
     color: grey;
     font-size: 1rem;
-    line-height: 1.2rem;
+    line-height: 1.4rem;
     padding: .5rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
 }
 
-main section article p{
-    margin: .5rem 0;
+.chisiamoTeam h4 {
+    margin-top: 1.5rem;
 }
 
 @media screen and (min-width: 768px) {
     .img-rounded {
+        width: 20vw;
         transition: all .4s ease-in-out;
     }
 
     .img-rounded:hover {
         transform: scale(1.1);
     }
+
+    .chisiamoFlorencia {
+        padding-top: 4.5rem;
+    }
+
+    .chisiamoFlorencia article p{
+        margin: .9rem 0;
+        width: 80vw;
+    }
 }
 
 @media screen and (min-width: 1200px) {
+    .chisiamoFlorencia {
+        width: 100%;
+    }
+
     .img-rounded {
         width: 13vw;
+    }
+
+    .chisiamoFlorencia article p{
+        width: 70vw;
     }
 }
