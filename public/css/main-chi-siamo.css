@@ -16,11 +16,12 @@ main {
     margin: auto;
     margin-bottom: 2rem;
     text-align: center;
-    color: grey;
+    color: #58555A;
     font-size: 1rem;
     line-height: 1.4rem;
     padding: .5rem;
     background: #F7E1DC;
+
 /*     width: 100%; */
     padding-top: 4rem;
 }
@@ -29,28 +30,44 @@ main {
     margin: .5rem 1rem;
 }
 
-.destacado {
-    color: #C8A31A;
-    font-weight: 700;
-}
-
 .chisiamoTeam {
     display: flex;
-    width: 90vw;
+    width: 100vw;
     flex-direction: column;
-    align-items: center;
-    margin: auto;
-    text-align: center;
-    color: grey;
-    font-size: 1rem;
-    line-height: 1.4rem;
-    padding: .5rem;
-    margin-top: 1.5rem;
-    margin-bottom: 1.5rem;
+    justify-content: center;
 }
 
-.chisiamoTeam h4 {
-    margin-top: 1.5rem;
+.homeChisiamo {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    color: #C8A31A;
+    text-shadow: 3px 2px 1px #F7E1DC;
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.chisiamoTeam article{
+    display: flex;
+    flex-flow: row wrap;
+    width: 100vw;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.chisiamoTeam p {
+    text-align: center;
+    font-size: 1rem;
+    line-height: 1.4rem;
+    color: #58555A;
+} 
+
+.chisiamoTeam .destacado, .chisiamoFlorencia .destacado {
+    color: #C8A31A;
+    font-weight: 700;
 }
 
 @media screen and (min-width: 768px) {
@@ -71,6 +88,10 @@ main {
         margin: .9rem 0;
         width: 80vw;
     }
+
+    .chisiamoTeam article{
+        margin-top: 1.5rem;
+    }
 }
 
 @media screen and (min-width: 1200px) {
@@ -84,5 +105,26 @@ main {
 
     .chisiamoFlorencia article p{
         width: 70vw;
+    }
+
+    .chisiamoTeam {
+        width: 90vw;
+        margin: auto;
+    }
+    
+    .homeChisiamo {
+        width: 100%;
+    }
+
+    .chisiamoTeam article{
+        flex-direction: column;
+        width: 40vw;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 1.5rem;
+    }
+
+    .chisiamoTeam figure{
+        margin-bottom: 1rem;
     }
 }

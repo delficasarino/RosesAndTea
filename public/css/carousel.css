@@ -8,6 +8,8 @@ img {vertical-align: middle;}
   margin: auto;
 }
 
+.slideshow-container img {width: 100%;}
+
 /* Next & previous buttons */
 .prev, .next {
   cursor: pointer;
@@ -43,11 +45,21 @@ img {vertical-align: middle;}
     /*     padding: 8px 12px; */
         position: absolute;
         line-height: 1.3rem;
-        top: 40%;
+        top: 25vw;
         width: 100%;
         text-align: center;
         padding: 0 3rem;
-        text-shadow: 3px 2px 1px #F7E1DC;
+/*         text-shadow: 3px 2px 1px #F7E1DC; */
+}
+
+.classicBoton {
+  font-weight: 700;
+  margin-top: .5rem;
+  color: #C8A31A;
+  background-color: #F7E1DC;
+  border-radius: 1rem;
+  padding: .3rem 1rem;
+  border: none;
 }
 
 .tituloCarousel {
@@ -60,7 +72,7 @@ img {vertical-align: middle;}
 .dots {
     position: absolute;
     bottom: 5vw;
-    left: 35%;
+    left: 37vw;
     }
 
 .dot {
@@ -96,24 +108,37 @@ img {vertical-align: middle;}
     to {opacity: 2}
   }
 
-/* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
-  .prev, .next,.text {font-size: 11px}
-}
-
 @media screen and (min-width: 768px){
     /* Caption text */
     .tituloCarousel {
         font-size: 1.5rem;
         margin-bottom: 1.5rem;
-        text-shadow: 3px 2px 1px #F7E1DC;
+/*         text-shadow: 3px 2px 1px #F7E1DC; */
     }
 
     .text {
         font-size: 1.2rem;
         line-height: 1.8rem;
         top: 20vw;
-        text-shadow: 3px 2px 1px #F7E1DC;
+/*         text-shadow: 3px 2px 1px #F7E1DC; */
+    }
+
+    .classicBoton {
+      color: #000;
+      background-color: transparent;
+      transition: all .4s ease-in-out;
+      margin-top: 1.5rem;
+      font-size: 1rem;
+      padding: .5rem 1.8rem;
+    }
+
+    .classicBoton:hover {
+      font-weight: 700;
+      color: #C8A31A;
+      background-color: #F7E1DC;
+      border-radius: 1rem;
+      padding: .5rem 2rem;
+      border: none;
     }
 
     .dots {
@@ -131,7 +156,7 @@ img {vertical-align: middle;}
     .text {
         font-size: 1.5rem;
         line-height: 2.5rem;
-        top: 15vw;
+        top: 13vw;
     }
 
     .dots {

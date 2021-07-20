@@ -17,6 +17,7 @@ main p {
     font-size: 1rem;
     line-height: 1.4rem;
     text-align: center;
+    color: #58555A;
 }
 
 main button  {
@@ -38,7 +39,7 @@ main button a{
     width: auto;
     align-self: center;
     text-decoration: none;
-    color: grey
+    color: #58555A;
 }
 
 main button:hover a{

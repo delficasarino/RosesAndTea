@@ -7,9 +7,10 @@ main {
     color: #C8A31A;
     text-shadow: 3px 2px 1px #F7E1DC;
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     font-weight: 700;
     margin: 2rem 0 1rem 0;
+    line-height: 2rem;
 }
 
 #home-video figure {
@@ -29,7 +30,7 @@ main {
   
 #gallery img{
     width: 100%;
-    padding: 0.3rem;
+    padding: 0.4rem;
 }
   
 #img-principal {
@@ -51,20 +52,28 @@ main {
   
 .pic-4 {
     width: 100%;
-    width: 100%;
+    height: 46%;
     display: flex;
 }
 
 @media screen and (min-width: 768px){
-    #gallery {
-        width: 70vw;
+
+    #gallery img{
+        padding: 0.5rem;
     }
 
-    #gallery figure{
+    #gallery {
+        width: 60vw;
+    }
+
+    .pic-4 {
+        height: 49%;
+    }
+/*     #gallery figure img{
         transition: all 0.4s ease-in-out;
     }
     
-    #gallery figure:hover{
+    #gallery figure:hover img{
         box-shadow: 0 0 20px 2px #C8A31A;
-    }
+    } */
 }
