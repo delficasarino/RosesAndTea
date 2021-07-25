@@ -2,54 +2,65 @@ main {
     margin-top: 82px;
     background-color: #F7E1DC;
     display: flex;
-    flex-direction: column;
-}
+/*     flex-direction: column;
+ */}
 
 main section {
     display: flex;
     flex-direction: column;
-    padding-top: 70px;
+    padding-top: 80px;
     width: 90vw;
     margin: auto;
+    padding-bottom: 2rem;
 }
 
-main p {
+main section figure {
+    display: none;
+}
+
+article.texto  {
+    padding-top: 1rem;
+}
+
+article.texto p {
     font-size: 1rem;
     line-height: 1.4rem;
     text-align: center;
     color: #58555A;
 }
 
-main button  {
+article.texto button  {
     border: none;
     background-color: transparent;
-    margin: 2rem 0;
+    margin-top: 2.5rem;
+    text-align: center;
+    width: 100%;
 }
 
-main button a{
+article.texto button a{
     border: none;
     background-color: #F7E1DC;
     color: #C8A31A;
     border-radius: 1rem;
-    padding: 0.5rem;
+    padding: 0.5rem 2rem;
     font-weight: 700;
     margin-top: 1.3rem;
     font-size: 0.9rem;
-    transition: all .4s ease-in-out;
     width: auto;
     align-self: center;
     text-decoration: none;
     color: #58555A;
+    transition: all .4s ease-in-out;
 }
 
-main button:hover a{
+article.texto button:hover a{
     background-color: #C8A31A;
     color: #F7E1DC;
     border-radius: 1.5rem;
-    padding: 0.5rem; 
+    padding: 0.5rem 2rem;
 }  
 
-.destacado {
+article.texto .destacado {
     margin-top: 2rem;
     color: #C8A31A;
     font-weight: 700;
@@ -64,8 +75,31 @@ main button:hover a{
 
 @media screen and (min-width: 1200px) {
     main section {
+        width: 80vw;
+        display: flex;
+        flex-flow: row wrap;
+        margin: auto;
+        justify-content: center;
+    }
 
-        width: 50vw;
+    main section article.texto {
+        width: 30vw;
+        padding: 0 2rem;
+        align-self: center;
+    }
+
+    main section figure {
+        display: flex;
+        width: 20vw;
+        align-items: center;
+        margin-bottom: 1rem;
+
+    }
+
+    main section img {
+        border-radius: 1rem;
+        border: #C8A31A .05rem solid;
+        width: 100%;
     }
     
 }

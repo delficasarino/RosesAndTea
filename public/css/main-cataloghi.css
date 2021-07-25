@@ -1,5 +1,5 @@
 main {
-    margin-top: 82px;
+    margin-top: 150px;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -15,75 +15,32 @@ main h2 {
 
 main .catalogo {
     margin-bottom: 1rem;
-    height: 55vw;
+/*     height: 55vw; */
+    position: relative;
+    color: #58555A;
 }
 
-.catalogo {
+.catalogo figure {
     display: flex;
-    position: relative;
-/*     overflow: hidden; */
-    width: 90vw;
-    align-self: center;
+    width: 80vw;
+    margin: auto;
+    opacity: 0.4;
+}
+
+.catalogo figure img {
+    border-radius: 1rem;
+    border: #C8A31A .05rem solid;
 }
 
 .catalogo article {
     display: flex;
     flex-direction: column;
-    padding: 1rem;
-    position: relative;
+    position: absolute;
+    top: 5vw;
+    left: 15vw;
     z-index: 3;
-    align-self: center;
-/*     width: 70vw; */
-    margin: auto;
+    width: 70vw;
     line-height: 1.3rem;
-}
-
-.catalogo::before {
-    content: ' ';
-    display: flex;
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-    opacity: 0.5;
-    background-image: url(/img/cataloghi/IMG_0198.jpeg);
-    background-repeat: no-repeat;
-/*     background-position: 50% 0; */
-    background-size: cover;
-    border-radius: 2rem;
-}
-
-.catalogo::before {
-    content: ' ';
-    display: flex;
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-    opacity: 0.5;
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-radius: 2rem;
-}
-
-#menu::before {
-    background-image: url(/img/cataloghi/IMG_0198.jpeg);
-}
-
-#torte::before {
-    background-image: url(/img/cataloghi/IMG_4920.jpeg);
-}
-
-#te::before {
-    background-image: url(/img/cataloghi/Roses.jpeg);
-}
-
-#delivery::before {
-    background-image: url(/img/cataloghi/IMG_5252.jpg); 
 }
 
 main .catalogo button {
@@ -91,7 +48,7 @@ main .catalogo button {
     background-color: #F7E1DC;
     color: #C8A31A;
     border-radius: 1rem;
-    padding: 0.5rem;
+    padding: 0.5rem 2rem;
     font-weight: 700;
     margin-top: 1rem;
     font-size: 0.9rem;
@@ -100,84 +57,81 @@ main .catalogo button {
     align-self: center;
 }
 
-main .catalogo button:hover {
-    background-color: #C8A31A;
-    color: #F7E1DC;
-    border-radius: 1.5rem;
-    padding: 0.5rem; 
-}  
-
 @media screen and (min-width: 768px) {
 
-    main .catalogo {
-        height: 30vw;
-
-    }
-
-    .catalogo {
+    .catalogo article {
+        top: 20vw;
+        left: 20vw;
         width: 60vw;
     }
-
-    .catalogo::before {
-        opacity: 1;
-        transition: all .4s ease-in-out;
-    }
-
-    .catalogo article p, .catalogo article button{
-        visibility:hidden;
-        opacity:0;
-        transition:all .4s linear;
-    }
-
-    .catalogo:hover::before{
-        opacity:0.4;
-    }
-
-    .catalogo:hover article p, .catalogo:hover article button{
-        visibility:visible;
-        opacity: 1;
-    }
-
-    .catalogo article {
-        padding: 0;
-    }
-
-    .catalogo article h2{
-        font-size: 2.5rem;
-        padding: 1.5rem;
-        background-color: #F7E1DC;
-        margin-top: 15%;
-        transition: all .4s ease-in-out;
-        box-shadow: 0 0 5px 0.5px #C8A31A;
-    }
-
-    .catalogo:hover h2{
-        transform: scale(0.7);
-        margin-top: 0;
-        background-color: transparent;
-        box-shadow: none;
-    }
+    
+    main .catalogo button:hover {
+        background-color: #C8A31A;
+        color: #F7E1DC;
+        border-radius: 1.5rem;
+        padding: 0.5rem 2rem;
+    }  
 
 }
 
 @media screen and (min-width: 1200px) {
-    
     main {
-        flex-flow: row wrap;
-        width: 100%;
-        margin-top: 160px;
-        justify-content: center;
+/*         flex-flow: row wrap; */
+        margin-top: 82px;
     }
 
-    main .catalogo{
-/*         display: flex;
-        flex-flow: row wrap; */
-        height: 20vw;
-        width: 34vw; 
-        margin: 1rem;
-        justify-content: center;
+    main h2 {
+        font-size: 2rem;
+        margin-bottom: 2rem;
     }
-    main .catalogo p {
-        padding: 1rem;
+
+    main .catalogo {
+        display: flex;
+        flex-flow: row wrap;
+/*         width: 80vw; */
+        margin: auto; 
+        width: 100%;
+        justify-content: space-evenly;
     }
+
+    main .rosa {
+        background-color: #F7E1DC;
+        padding-top: 4.37rem;
+        padding-bottom: 4.37rem;     
+        padding-right: 6rem;
+
+    }
+
+    main .celeste {
+        background-color: #D8EFF6;
+        padding-top: 4.37rem;
+        padding-bottom: 4.37rem;
+        padding-left: 6rem;
+    }
+
+    .catalogo figure {
+        display: flex;
+        width: 35%;
+        opacity: 1;
+ /*        margin: auto; */
+ 
+    }
+
+
+    .catalogo article {
+        display: flex;
+        flex-direction: column;
+        position: initial;
+        width: 40%;
+        line-height: 1.3rem;
+        align-self: center;
+        padding: 3rem;
+    }
+
+    main .catalogo button {
+        font-size: 1rem;
+        background-color: transparent;
+    }
+    
+
 }
