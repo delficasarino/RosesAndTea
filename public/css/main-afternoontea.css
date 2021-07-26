@@ -1,6 +1,5 @@
 main {
     margin-top: 82px;
-/*     background-color: #F7E1DC; */
     display: flex;
 }
 
@@ -17,21 +16,23 @@ main section figure {
     display: none;
 }
 
-article.informacion p {
+article.texto p {
     font-size: 1rem;
     line-height: 1.4rem;
     text-align: center;
+    color: #58555A;
 }
 
-article.informacion button  {
+article.texto button  {
     border: none;
     background-color: transparent;
-    margin-top: 2.5rem;
+    margin-top: 1rem;
     text-align: center;
     width: 100%;
+    margin-bottom: 2rem;
 }
 
-article.informacion button a{
+article.texto button a{
     border: none;
     background-color: #F7E1DC;
     color: #C8A31A;
@@ -47,14 +48,14 @@ article.informacion button a{
     transition: all .4s ease-in-out;
 }
 
-article.informacion button:hover a{
+article.texto button:hover a{
     background-color: #C8A31A;
     color: #F7E1DC;
     border-radius: 1.5rem;
     padding: 0.5rem 2rem;
 }  
 
-article.informacion .destacado {
+article.texto .destacado {
     margin-top: 2rem;
     color: #C8A31A;
     font-weight: 700;
@@ -76,8 +77,8 @@ article.informacion .destacado {
         justify-content: center;
     }
 
-    main section article.informacion {
-        width: 30vw;
+    main section.informacion {
+        width: 40vw;
         padding: 0 2rem;
         align-self: center;
     }

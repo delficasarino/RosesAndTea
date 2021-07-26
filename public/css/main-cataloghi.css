@@ -5,24 +5,15 @@ main {
     flex-direction: column;
 }
 
-main h2 {
-    color: #C8A31A;
-    font-weight: 700;
-    font-size: 1.5rem;
-    margin: .8rem 0;
-    text-shadow: 3px 2px 1px #F7E1DC;
-}
-
 main .catalogo {
     margin-bottom: 1rem;
-/*     height: 55vw; */
     position: relative;
     color: #58555A;
 }
 
 .catalogo figure {
     display: flex;
-    width: 80vw;
+    width: 90vw;
     margin: auto;
     opacity: 0.4;
 }
@@ -76,30 +67,22 @@ main .catalogo button {
 
 @media screen and (min-width: 1200px) {
     main {
-/*         flex-flow: row wrap; */
         margin-top: 82px;
-    }
-
-    main h2 {
-        font-size: 2rem;
-        margin-bottom: 2rem;
+        padding-top: 4.37rem; 
     }
 
     main .catalogo {
         display: flex;
         flex-flow: row wrap;
-/*         width: 80vw; */
         margin: auto; 
-        width: 100%;
-        justify-content: space-evenly;
+        width:70vw;
     }
 
-    main .rosa {
+/*     main .rosa {
         background-color: #F7E1DC;
         padding-top: 4.37rem;
         padding-bottom: 4.37rem;     
         padding-right: 6rem;
-
     }
 
     main .celeste {
@@ -107,22 +90,19 @@ main .catalogo button {
         padding-top: 4.37rem;
         padding-bottom: 4.37rem;
         padding-left: 6rem;
-    }
+    } */
 
     .catalogo figure {
         display: flex;
-        width: 35%;
+        width: 40vw;
         opacity: 1;
- /*        margin: auto; */
- 
     }
-
 
     .catalogo article {
         display: flex;
         flex-direction: column;
         position: initial;
-        width: 40%;
+        width: 30vw;
         line-height: 1.3rem;
         align-self: center;
         padding: 3rem;

@@ -12,6 +12,16 @@ body {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  color:#58555A;
+}
+
+.title {
+  color: #C8A31A;
+  text-shadow: 3px 2px 1px #F7E1DC;
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
 }
 
 /*
