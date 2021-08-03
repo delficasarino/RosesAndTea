@@ -38,7 +38,7 @@ header {
     position: fixed;
     width: 100vw;
     height: 100vh;
-    background-color: rgba(247, 225, 220, 0.7);
+    background-color: rgba(247, 225, 220, 0.8);
     justify-content: center;
     align-items: center;
     flex-direction:column;
@@ -89,7 +89,7 @@ header {
         display: flex;
         flex-flow: row wrap;
         justify-content: center;
-        align-items: center;    
+/*         align-items: center;  */   
     }
 
     #main-navbar a{
@@ -127,15 +127,20 @@ header {
 }
 
 @media screen and (min-width: 1200px){
+    #main-navbar .navbar{
+        height: 15vh;
+        margin-top: .5rem;
+    }
     #navbar-center {
-        /*         align-content: center; */
-                margin-top: 0rem;
-            }
+        margin-top: 0.3rem;
+    
+        }
     #main-navbar a{
-        padding: 1rem;
+        padding: 0 1rem;
         border-radius: 10rem;
         transition: all .4s ease-in-out;
     }
+    
     #main-navbar a:not([href="/"]):hover{
         padding: 1rem;
         border-radius: 10rem;
