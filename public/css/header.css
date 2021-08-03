@@ -85,6 +85,11 @@ header {
         display: none;
     }
 
+    #main-navbar .navbar{
+        height: 15vh;
+        margin-top: .5rem;
+    }
+    
     #main-navbar{
         display: flex;
         flex-flow: row wrap;
@@ -127,10 +132,7 @@ header {
 }
 
 @media screen and (min-width: 1200px){
-    #main-navbar .navbar{
-        height: 15vh;
-        margin-top: .5rem;
-    }
+    
     #navbar-center {
         margin-top: 0.3rem;
     
