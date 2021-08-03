@@ -4,7 +4,9 @@ img {vertical-align: middle;}
 /* Slideshow container */
 .slideshow-container {
   max-width: 100vw;
-  position: relative;
+  position: absolute;
+  top: 15vh;
+  z-index: -1;
   margin: auto;
 }
 

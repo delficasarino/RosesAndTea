@@ -1,7 +1,7 @@
 /*INICIO FOOTER*/
 footer {
   width: 100%;
-  display: flex;
+  display: none;
   flex-flow: column wrap;
   margin: auto ;
   margin-top: 2rem;
