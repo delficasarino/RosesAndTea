@@ -1,9 +1,9 @@
 /*INICIO FOOTER*/
 footer {
-  width: 100%;
-  display: none;
+  display: flex;
   flex-flow: column wrap;
-  margin: auto ;
+  justify-content: center;
+  align-items: center;
   margin-top: 2rem;
   background-color: #F7E1DC;
 }
@@ -32,9 +32,6 @@ footer h4 {
     margin: auto;
   }
 
-
-
-
 #footer-first-section article{
   width: 100vw;
   display: flex;
@@ -48,6 +45,7 @@ footer #footer-second-section {
     background-color: #C6B4B0;
     display: flex;
     flex-flow: column wrap;
+    width: 100%;
   }
 
 /*** PC ***/

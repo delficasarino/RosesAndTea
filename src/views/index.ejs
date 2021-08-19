@@ -5,72 +5,60 @@
 	<%- include ("./partials/header") %> 
 	</header>
 	<main>
+		<section id="absolute">
+		</section>
 		<section class="slideshow-container">
 			<article class="mySlides fade">
 			  	<figure>
 					<img src="/img/home/tuttoperlafesta.jpeg" alt="Tutto per la festa">
 			  	</figure>
-			  	<section class="text">
-					<p class="tituloCarousel">TUTTO PER LA TUA FESTA</p>
-					<p>Rendi la tua festa speciale con noi.</p>
-					<p>Organizziamo feste su misura per te.</p>
-					<form action="/" method="get">
-						<button class="classicBoton" type="submit">SCROPI PIU</button>
-					</form>
+			  	<section id="text">
+					<h2 class="lato-dark">TUTTO PER LA TUA FESTA</h2>
+					<p class="lato-regular">Rendi la tua festa speciale con noi.</p>
+					<p class="lato-regular">Organizziamo feste su misura per te.</p>
+					<a href="/" class="lato-dark">SCROPI PIU</a>
 				</section>
 			</article>
-			
-			<article class="mySlides">
-				<figure class="fade">
-				  	<img src="/img/home/unpostomagico.jpg" alt="Un posto magico">
-				</figure>
-				<section class="text">
-					<p class="tituloCarousel">UN POSTO MAGICO</p>
-					<p>Da Roses And Tea è sempre primavera.</p>
-					<p>Visita un posto con un’ atmosfera meravigliosa.</p>
-					<form action="/" method="get">
-						<button class="classicBoton" type="submit">VEDI CATALOGO</button>
-					</form>
-			  </section>
+			<article class="mySlides fade">
+			  	<figure class="imgCarrousel">
+					<img src="/img/home/tuttoperlafesta.jpeg" alt="Tutto per la festa">
+			  	</figure>
+			  	<section id="text">
+					<h2 class="lato-dark">TUTTO PER LA TUA FESTA</h2>
+					<p class="lato-regular">Rendi la tua festa speciale con noi.</p>
+					<p class="lato-regular">Organizziamo feste su misura per te.</p>
+					<a href="/" class="lato-dark">SCROPI PIU</a>
+				</section>
 			</article>
-			
 			<article class="mySlides">
 				<figure class="fade">
 				  	<img src="/img/home/letuetorte.jpg" alt="Le tue torte">
 				</figure>
-				<section class="text">
-					<p class="tituloCarousel">LE TUE TORTE PREFERITE</p>
-					<p>Hai un evento speciale?</p>
-					<p>Noi ti aiutiamo a realizzare la torta dei tuoi sogni.</p>
-					<form action="/" method="get">
-						<button class="classicBoton" type="submit">REQUIDE PREVENTIVO</button>
-					</form>
-			  </section>
+				<section id="text">
+					<h2 class="lato-dark">LE TUE TORTE PREFERITE</h2>
+					<p class="lato-regular">Hai un evento speciale?</p>
+					<p class="lato-regular">Noi ti aiutiamo a realizzare la torta dei tuoi sogni.</p>
+					<a href="/" class="lato-dark">REQUIDE PREVENTIVO</a>
+			  	</section>
 			</article>
-
 			<article class="mySlides">
 				<figure class="fade">
 				  	<img src="/img/home/IMG_3913 2.jpeg" alt="Afternoon tea">
 				</figure>
-				<section class="text">
-					<p class="tituloCarousel">AFTERNOON TEA</p>
-					<p>Il nostro afternoon tea e perfetto per tutte le tue celebrazioni</p>
-					<form action="/brunch-afternoon-tea" method="get">
-						<button class="classicBoton" type="submit">SCROPI PIU</button>
-					</form>
-			  </section>
+				<section id="text">
+					<h2 class="lato-dark">AFTERNOON TEA</h2>
+					<p class="lato-regular">Il nostro afternoon tea e perfetto per tutte le tue celebrazioni</p>
+					<a href="/" class="lato-dark">SCROPI PIU</a>
+			  	</section>
 			</article>
-
 			<article class="mySlides">
 				<figure class="fade">
 				  	<img src="/img/home/IMG_5159.jpeg" alt="Brunch">
 				</figure>
-				<section class="text">
-					<p class="tituloCarousel">BRUNCH ALWAYS IS A GOOD IDEA</p>
-					<p>Un Brunch fresco e variegato da gustare in compagnia di famiglia e amici in una magica atmosfera.</p>
-					<form action="/brunch-afternoon-tea" method="get">
-						<button class="classicBoton" type="submit">SCROPI PIU</button>
-					</form>
+				<section id="text">
+					<h2 class="lato-dark">BRUNCH ALWAYS IS A GOOD IDEA</h2>
+					<p class="lato-regular">Un Brunch fresco e variegato da gustare in compagnia di famiglia e amici in una magica atmosfera.</p>
+					<a href="/" class="lato-dark">SCROPI PIU</a>
 				</section>
 			</article>
 			
@@ -112,9 +100,8 @@
 				slides[slideIndex-1].style.display = "block";  
 				dots[slideIndex-1].className += " active";
 				}
-			</script>	
-			
-		<!-- <section id="home-video">
+			</script>		
+		<section id="home-video">
 			<h2 class="homeTitle">
 				ROSES & TEA<br>PARTIES
 			</h2>
@@ -146,7 +133,7 @@
 					</figure>
 				</section>
 			</article>
-		</section> -->
+		</section>
 	</main>
 	<%- include ("./partials/footer") %> 
 </body>

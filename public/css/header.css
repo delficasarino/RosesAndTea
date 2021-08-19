@@ -18,8 +18,9 @@ header {
 #navbar-logo {
     display: flex;
     flex-flow: row wrap;
-    width: 20vh;
+    width: 25vh;
     margin-top: .5rem;
+    z-index: 9999;
 } 
 
 #logo {
@@ -36,6 +37,7 @@ header {
 #main-navbar:target{
     display: flex;
     position: fixed;
+    top: 0;
     width: 100vw;
     height: 100vh;
     background-color: rgba(247, 225, 220, 0.8);
@@ -43,7 +45,6 @@ header {
     align-items: center;
     flex-direction:column;
     z-index: 2;
-    margin-top: 28rem;
 }
 
 #main-navbar:target a{
@@ -61,7 +62,7 @@ header {
 #burger-menu {
     position: absolute;
     right: 10vw;
-    top: 5vh;
+    top: 3vh;
     font-size: 1.5rem; 
     background-color: #F7E1DC;
     padding: .5rem;
@@ -89,7 +90,7 @@ header {
         height: 15vh;
         margin-top: .5rem;
     }
-    
+
     #main-navbar{
         display: flex;
         flex-flow: row wrap;
@@ -100,7 +101,7 @@ header {
     #main-navbar a{
         margin-right: 1rem;
         text-decoration: none;
-        font-size: 0.8rem;
+        font-size: 0.7rem;
     }
 
     #navbar-left{
@@ -119,7 +120,7 @@ header {
     }
 
     #navbar-center img{
-        height: 10vw;
+        height: 13vw;
 
     }
 
@@ -132,7 +133,10 @@ header {
 }
 
 @media screen and (min-width: 1200px){
-    
+    #navbar-center img{
+        height: 10vw;
+
+    }
     #navbar-center {
         margin-top: 0.3rem;
     
@@ -141,6 +145,7 @@ header {
         padding: 0 1rem;
         border-radius: 10rem;
         transition: all .4s ease-in-out;
+        font-size: .9rem;
     }
     
     #main-navbar a:not([href="/"]):hover{
