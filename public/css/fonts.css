@@ -22,8 +22,7 @@
 
 body {
     font-family: 'Lato', sans-serif;
-    font-weight: 300;
-    width: 100%;
+    font-weight: 400;
   }
   
 img, video {
@@ -46,10 +45,4 @@ img, video {
     margin-bottom: 1rem;
   }
   
-  /*
-  COLORES
-  Rosa #F7E1DC
-  Dorado #C8A31A
-  Gris
-  */
   

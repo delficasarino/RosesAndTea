@@ -1,0 +1,28 @@
+  :root{
+    --rosa: rgb(247, 225, 220, 1);
+    --dorado: rgb(200, 163, 26, 1);
+}
+
+.bg-rosa{
+    background-color: var(--rosa)
+}
+
+.cl-rosa{
+    color: var(--rosa)
+}
+
+.bd-rosa{
+    border-color: var(--rosa)
+}
+
+.bg-dorado{
+    background-color: var(--dorado)
+}
+
+.cl-dorado{
+    color: var(--dorado)
+}
+
+.bd-dorado{
+    border-color: var(--dorado)
+}

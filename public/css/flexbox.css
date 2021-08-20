@@ -1,0 +1,203 @@
+.df{
+    display: flex;
+}
+
+.nwp{
+    flex-wrap: nowrap;
+}
+
+.wp{
+    flex-wrap: wrap;
+}
+
+.rw{
+    flex-direction: row;  
+}
+
+.cl{
+    flex-direction: column;  
+}
+
+.fx-auto{
+    flex: 1 0 auto; 
+}
+
+.jcc{
+    justify-content: center;
+}
+
+.jce{
+    justify-content: flex-end;
+}
+
+.jcs{
+    justify-content: flex-start;
+}
+
+.jca{
+    justify-content: space-around;
+}
+
+.jcb{
+    justify-content: space-between;
+}
+
+.jcse{
+    justify-content: space-evenly;
+}
+
+.aic{
+    align-items: center;
+}
+
+.aie{
+    align-items: flex-end;
+}
+
+.ais{
+    align-items: flex-start;
+}
+
+.aist{
+    align-items: stretch;
+}
+
+.asc{
+    align-self: center;
+}
+
+@media screen and (min-width: 768px){
+    .t-df{
+        display: flex;
+    }
+    
+    .t-nwp{
+        flex-wrap: nowrap;
+    }
+    
+    .t-wp{
+        flex-wrap: wrap;
+    }
+    
+    .t-rw{
+        flex-direction: row;  
+    }
+
+    .t-rwr{
+        flex-direction: row-reverse;
+    }
+    
+    .t-cl{
+        flex-direction: column;  
+    }
+    
+    .t-fx-auto{
+        flex: 1 0 auto; 
+    }
+    
+    .t-jcc{
+        justify-content: center;
+    }
+    
+    .t-jce{
+        justify-content: flex-end;
+    }
+    
+    .t-jcs{
+        justify-content: flex-start;
+    }
+    
+    .t-jca{
+        justify-content: space-around;
+    }
+    
+    .t-jcb{
+        justify-content: space-between;
+    }
+
+    .t-jcse{
+        justify-content: space-evenly;
+    }
+    
+    .t-aic{
+        align-items: center;
+    }
+    
+    .t-aie{
+        align-items: flex-end;
+    }
+    
+    .t-ais{
+        align-items: flex-start;
+    }
+    
+    .t-aist{
+        align-items: stretch;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    .d-df{
+        display: flex;
+    }
+    
+    .d-nwp{
+        flex-wrap: nowrap;
+    }
+    
+    .d-wp{
+        flex-wrap: wrap;
+    }
+    
+    .d-rw{
+        flex-direction: row;  
+    }
+    
+    .d-cl{
+        flex-direction: column;  
+    }
+    
+    .d-fx-auto{
+        flex: 1 0 auto; 
+    }
+    
+    .d-jcc{
+        justify-content: center;
+    }
+    
+    .d-jce{
+        justify-content: flex-end;
+    }
+    
+    .d-jcs{
+        justify-content: flex-start;
+    }
+    
+    .d-jca{
+        justify-content: space-around;
+    }
+    
+    .d-jcb{
+        justify-content: space-between;
+    }
+
+    .d-jcse{
+        justify-content: space-evenly;
+    }
+    
+    .d-aic{
+        align-items: center;
+    }
+    
+    .d-aie{
+        align-items: flex-end;
+    }
+    
+    .d-ais{
+        align-items: flex-start;
+    }
+    
+    .d-aist{
+        align-items: stretch;
+    }
+}
