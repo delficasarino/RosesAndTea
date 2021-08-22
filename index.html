@@ -41,7 +41,7 @@
 				</nav>
 			</nav>
 			<nav id="mobile" class="df rw wp aic jcc">
-				<a href="#" id="logoMobile" class="df rw wp jcc aic">
+				<a href="index.html" id="logoMobile" class="df rw wp jcc aic">
 					<figure>
 						<img id="logo" src="./public/img/logo.png" alt="Roses & Tea">
 					</figure>
@@ -52,22 +52,9 @@
 			</nav>
 		</header>
 		<main>
-			<section id="absolute" class="df rw wp jcc aic">
-			</section>
 			<section class="slideshow-container">
 				<article class="mySlides fade">
 					<figure>
-						<img src="./public/img/home/tuttoperlafesta.jpeg" alt="Tutto per la festa">
-					</figure>
-					<section id="text" class="df rw wp jcc aic">
-						<h2 class="lato-dark">TUTTO PER LA TUA FESTA</h2>
-						<p class="lato-regular">Rendi la tua festa speciale con noi.</p>
-						<p class="lato-regular">Organizziamo feste su misura per te.</p>
-						<a href="/" class="lato-dark">SCROPI PIU</a>
-					</section>
-				</article>
-				<article class="mySlides fade">
-					<figure class="imgCarrousel">
 						<img src="./public/img/home/tuttoperlafesta.jpeg" alt="Tutto per la festa">
 					</figure>
 					<section id="text" class="df rw wp jcc aic">
@@ -117,7 +104,6 @@
 					<span class="dot" onclick="currentSlide(2)"></span> 
 					<span class="dot" onclick="currentSlide(3)"></span> 
 					<span class="dot" onclick="currentSlide(4)"></span> 
-					<span class="dot" onclick="currentSlide(5)"></span> 
 				</article>	
 			</section>
 			<section id="home-video" class="df rw wp jcc aic">
@@ -174,9 +160,9 @@
 					</figure>
 					<h4>ORARI DE APERTURA</h4>
 				</article>
-				<article class="df cl aic">
-					<img src="">
-					<h4>REDES</h4>
+				<article class="df rw wp jca aic">
+					<a href="#"><i class="fab fa-facebook-square cl-dorado icons"></i></a>
+					<a href="#"><i class="fab fa-instagram-square cl-dorado icons"></i></a>
 				</article>
 			</section>
 			<section id="footer-second-section" class="df cl aic">
@@ -185,34 +171,6 @@
 				<p>rosesandteaofficial.com</p>
 			</section>
 		</footer> 
-
-		<script>
-			var slideIndex = 1;
-			showSlides(slideIndex);
-
-			function plusSlides(n) {
-			showSlides(slideIndex += n);
-			}
-
-			function currentSlide(n) {
-			showSlides(slideIndex = n);
-			}
-
-			function showSlides(n) {
-			var i;
-			var slides = document.getElementsByClassName("mySlides");
-			var dots = document.getElementsByClassName("dot");
-			if (n > slides.length) {slideIndex = 1}    
-			if (n < 1) {slideIndex = slides.length}
-			for (i = 0; i < slides.length; i++) {
-				slides[i].style.display = "none";  
-			}
-			for (i = 0; i < dots.length; i++) {
-				dots[i].className = dots[i].className.replace(" active", "");
-			}
-			slides[slideIndex-1].style.display = "block";  
-			dots[slideIndex-1].className += " active";
-			}
-		</script>	
+		<script src="./public/js/carousel.js" ></script>	
 	</body>
 </html>

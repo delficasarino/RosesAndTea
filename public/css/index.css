@@ -1,10 +1,3 @@
-#absolute {
-    max-width: 100vw;
-    position: absolute;
-    top: 10vh;
-    z-index: -1;
-  }
-
 .homeTitle {
     flex: 0 0 100%;
     color: rgb(200, 163, 26);

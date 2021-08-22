@@ -23,8 +23,8 @@ footer h4 {
   }
 
 #footer-first-section article{
-  width: 100vw;
   margin-bottom: 2rem;
+  width: calc(100vw - 5rem);
   }
 
 footer #footer-second-section {
@@ -33,6 +33,9 @@ footer #footer-second-section {
     width: 100%;
   }
 
+.icons{
+  font-size: 2rem;
+}
 /*** PC ***/
 @media screen and (min-width: 768px) {     
   #footer-first-section figure img {
