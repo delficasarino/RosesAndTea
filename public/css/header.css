@@ -2,6 +2,43 @@
     display: none;
 }
 
+#desktop:target #desktopLogo{
+    display: none
+}
+
+#desktop:target {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--rosa);
+    justify-content: center;
+    align-items: center;
+    flex-direction:column;
+    z-index: 2;
+}
+
+#desktop:target .links {
+    display: flex;
+    flex-direction:column;
+}
+
+#desktop:target .links a{
+    margin-bottom: .7rem;
+    text-decoration: none;
+}
+
+#desktop:target #close {
+    margin-bottom: 1rem;
+}
+
+#desktop:target #close i {
+    color: var(--dorado);
+    font-size: 1.2rem;
+}
+
 #mobile {
     width: calc(100vw - 6rem);
     margin-top: .5rem;
@@ -52,7 +89,7 @@
     #desktop .links a {
         text-decoration: none;
         font-size: .75rem;
-        padding: .8rem
+        padding: .5rem
     }
 
     #desktopLogo{
@@ -79,7 +116,8 @@
 
     #desktop .links a {
         font-size: .9rem;
-        transition: all .4s ease-in-out
+        transition: all .4s ease-in-out;
+        padding: .8rem
     }
 
     #desktop .links a:hover {
