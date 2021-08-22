@@ -1,9 +1,5 @@
 /*INICIO FOOTER*/
 footer {
-  display: flex;
-  flex-flow: column wrap;
-  justify-content: center;
-  align-items: center;
   margin-top: 2rem;
   background-color: #F7E1DC;
 }
@@ -22,39 +18,23 @@ footer h4 {
   }
   
 #footer-first-section {
-
-    display: flex;
-    flex-flow: column wrap;
     width: 90vw;
-    justify-content: center;
-    align-content: center;
     padding: 2rem;
-    margin: auto;
   }
 
 #footer-first-section article{
   width: 100vw;
-  display: flex;
-  flex-flow: column wrap;
   margin-bottom: 2rem;
-  align-items: center;
   }
 
 footer #footer-second-section {
     padding: 10px;
     background-color: #C6B4B0;
-    display: flex;
-    flex-flow: column wrap;
     width: 100%;
   }
 
 /*** PC ***/
-@media screen and (min-width: 768px) {      
-  #footer-first-section {
-    flex-flow: row wrap;
-
-  }
-
+@media screen and (min-width: 768px) {     
   #footer-first-section figure img {
     width: 20vw;
   } 
@@ -67,16 +47,6 @@ footer #footer-second-section {
 
 /*** PC ***/
 @media screen and (min-width: 1200px) {      
-  #footer-first-section {
-    flex-flow: row wrap;
-
-  }
-
-  #footer-first-section article{
-    flex-flow: column wrap;
-  }
-
-
   #footer-first-section figure img {
     width: 100%;
   }

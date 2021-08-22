@@ -1,8 +1,6 @@
 main {
-    margin-top: 150px;
+    padding-top: 10vh;
     text-align: center;
-    display: flex;
-    flex-direction: column;
 }
 
 main .catalogo {
@@ -12,9 +10,7 @@ main .catalogo {
 }
 
 .catalogo figure {
-    display: flex;
-    width: 90vw;
-    margin: auto;
+    width: calc(100vw - 2rem);
     opacity: 0.4;
 }
 
@@ -44,11 +40,17 @@ main .catalogo button {
     margin-top: 1rem;
     font-size: 0.9rem;
     transition: all .4s ease-in-out;
-    width: auto;
     align-self: center;
 }
 
 @media screen and (min-width: 768px) {
+    main {
+        padding-top: 5vh;
+    }
+
+    .catalogo figure {
+        width: calc(100vw - 7rem);
+    }
 
     .catalogo article {
         top: 20vw;
@@ -67,40 +69,16 @@ main .catalogo button {
 
 @media screen and (min-width: 1200px) {
     main {
-        margin-top: 82px;
         padding-top: 4.37rem; 
     }
 
-    main .catalogo {
-        display: flex;
-        flex-flow: row wrap;
-        margin: auto; 
-        width:70vw;
-    }
-
-/*     main .rosa {
-        background-color: #F7E1DC;
-        padding-top: 4.37rem;
-        padding-bottom: 4.37rem;     
-        padding-right: 6rem;
-    }
-
-    main .celeste {
-        background-color: #D8EFF6;
-        padding-top: 4.37rem;
-        padding-bottom: 4.37rem;
-        padding-left: 6rem;
-    } */
-
     .catalogo figure {
-        display: flex;
         width: 40vw;
         opacity: 1;
     }
 
     .catalogo article {
         display: flex;
-        flex-direction: column;
         position: initial;
         width: 30vw;
         line-height: 1.3rem;

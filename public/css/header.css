@@ -17,7 +17,7 @@
     justify-content: center;
     align-items: center;
     flex-direction:column;
-    z-index: 2;
+    z-index: 6;
 }
 
 #desktop:target .links {
@@ -42,10 +42,16 @@
 #mobile {
     width: calc(100vw - 6rem);
     margin-top: .5rem;
+    position: relative;
+    height: 10vh
 }
 
 #logoMobile {
-    flex: 0 0 80%
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 5;
 }
 
 #logoMobile img {
@@ -55,12 +61,14 @@
 
 #mobile a {
     text-decoration: none;
+    flex: 0 0 100%;
 }
 
 #mobile a i{
     font-size: 1.3rem;
     padding: .7rem;
     border-radius: .5rem;
+    z-index: 10;
 }
 
 @media screen and (min-width: 768px){
@@ -97,6 +105,7 @@
         top: 0;
         left: 0;
         right: 0;
+        z-index: 5;
     }
 
     #desktopLogo img{

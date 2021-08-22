@@ -1,16 +1,63 @@
 ﻿<!DOCTYPE html>
 <html lang="it">
-	<%- include ("./partials/head") %> 
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Roses & Tea | Bienvenidos </title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+		<link rel="stylesheet" href="./public/css/reset.css">
+		<link rel="stylesheet" href="./public/css/normalize.css">
+		<link rel="stylesheet" href="./public/css/fonts.css">
+		<link rel="stylesheet" href="./public/css/colors.css">
+		<link rel="stylesheet" href="./public/css/flexbox.css">
+		<link rel="stylesheet" href="./public/css/header.css">
+		<link rel="stylesheet" href="./public/css/main-eventi.css">
+		<link rel="stylesheet" href="./public/css/footer.css">
+	</head>
 	<body>
-		<%- include ("./partials/header") %> 
-		<main>
-			<section>
+		<header class="df rw wp jcc aic">
+			<nav id="desktop" class="df rw wp jcb fx-auto d-jca">
+				<nav id="close">
+					<a href="#"><i class="fas fa-times"></i></a>
+				</nav>
+				<nav class="links df wr wp jca aic">
+					<a href="chisiamo.html">CHI SIAMO</a>
+					<a href="cataloghi.html">CATALOGHI / MENU</a>
+					<a href="eventi.html">EVENTI</a>
+				</nav>
+				<nav id="desktopLogo" class="df jcc">
+					<a href="index.html">
+						<figure>
+							<img id="logo" src="./public/img/logo.png" alt="Roses & Tea">
+						</figure>
+					</a>
+				</nav>
+				<nav class="links df wr wp jca aic">
+					<a href="brunchAfternoon.html">BRUNCH / AFTERNOON TEA</a>
+					<a href="shop.html">SHOP</a>
+					<a href="contatto.html">CONTATTO</a>
+				</nav>
+			</nav>
+			<nav id="mobile" class="df rw wp aic jcc">
+				<a href="#" id="logoMobile" class="df rw wp jcc aic">
+					<figure>
+						<img id="logo" src="./public/img/logo.png" alt="Roses & Tea">
+					</figure>
+				</a>
+				<a href="#desktop" class="df rw wp jce aic ">
+					<i class="fas fa-bars cl-dorado bg-rosa"></i>
+				</a>
+			</nav>
+		</header>
+		<main class="df rw wp jcc aic">
+			<section class="d-df d-rw d-wp d-jcc d-aic">
 				<article class="img">
 					<figure>
-						<img src="img/eventi/Roses (80).jpeg" alt="">
+						<img src="./public/img/eventi/Roses (80).jpeg" alt="">
 					</figure>
 					<figure>
-						<img src="img/eventi/IMG_4803.jpg" alt="">
+						<img src="./public/img/eventi/IMG_4803.jpg" alt="">
 					</figure>
 				</article>
 				<article class="informacion">
@@ -26,37 +73,44 @@
 				</article>
 				<article class="img">
 					<figure>
-						<img src="img/eventi/IMG_4925.jpg" alt="">
+						<img src="./public/img/eventi/IMG_4925.jpg" alt="">
 					</figure>
 					<figure>
-						<img src="img/eventi/IMG_4947.jpeg" alt="">
+						<img src="./public/img/eventi/IMG_4947.jpeg" alt="">
 					</figure>
 				</article>
 			</section>
 		</main>
-	<!-- 
-						<ul id="content-slider" class="content-slider">
-								<li>
-									<img src="img/eventi/IMG_4076.jpg" style="width: 100%">
-								</li>
-								<li>
-									<img src="img/eventi/IMG_4803.jpg" style="width: 100%">
-								</li>
-								<li>
-									<img src="img/eventi/IMG_4925.jpg" style="width: 100%">
-								</li>
-								<li>
-									<img src="img/eventi/IMG_4947.jpeg" style="width: 100%">
-								</li>
-								<li>
-								<img src="img/eventi/Roses (80).jpeg" style="width: 100%"> 
-								</li>
-								<li>
-								<img src="img/eventi/IMG_3913 2.jpg" style="width: 100%">
-								</li>
-						</ul>
-
-	-->
-	<%- include ("./partials/footer") %> 
+		<footer class="df cl jcc aic">
+			<section id="footer-first-section" class="df cl jcc aic t-rw t-wp">
+				<article class="df cl aic">
+					<figure>
+						<img src="./public/img/footer/delivery.png" alt="delivery">
+					</figure>
+					<h4>DELIVERY</h4>
+				</article>
+				<article class="df cl aic">
+					<figure>
+						<img src="./public/img/footer/conttato.png" alt="conttato">
+					</figure>
+					<h4>CONTTATO</h4>
+				</article>
+				<article class="df cl aic">
+					<figure>
+						<img src="./public/img/footer/orari.png" alt="orari">
+					</figure>
+					<h4>ORARI DE APERTURA</h4>
+				</article>
+				<article class="df cl aic">
+					<img src="">
+					<h4>REDES</h4>
+				</article>
+			</section>
+			<section id="footer-second-section" class="df cl aic">
+				<p>Via San Dalmazzo 7, 10122 Torino (TO) - Tel. 011.199.222.82 - P.IVA 11885920014</p>
+				<p>© 2021 Copyright: Roses & Tea</p>
+				<p>rosesandteaofficial.com</p>
+			</section>
+		</footer> 
 	</body>
 </html>

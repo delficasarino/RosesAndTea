@@ -1,15 +1,6 @@
-main {
-    margin-top: 82px;
-/*     background-color: #F7E1DC; */
-    display: flex;
-}
-
 main section {
-    display: flex;
-    flex-direction: column;
     padding-top: 4.37rem;
     width: 90vw;
-    margin: auto;
     padding-bottom: 2rem;
 }
 
@@ -68,14 +59,6 @@ article.informacion .destacado {
 }
 
 @media screen and (min-width: 1200px) {
-    main section {
-        width: 80vw;
-        display: flex;
-        flex-flow: row wrap;
-        margin: auto;
-        justify-content: center;
-    }
-
     main section article.informacion {
         width: 30vw;
         padding: 0 2rem;
@@ -85,7 +68,6 @@ article.informacion .destacado {
     main section figure {
         display: flex;
         width: 20vw;
-        align-items: center;
         margin-bottom: 1rem;
 
     }

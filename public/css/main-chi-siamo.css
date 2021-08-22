@@ -1,7 +1,3 @@
-main {
-    margin-top: 82px;
-}
-
 .img-rounded {
     border-radius: 50%;
     width: 40vw;
@@ -9,11 +5,7 @@ main {
 }
 
 .chisiamoFlorencia {
-    display: flex;
     width: 100vw;
-    flex-direction: column;
-    align-items: center;
-    margin: auto;
     margin-bottom: 2rem;
     text-align: justify;
     line-height: 1.4rem;
@@ -34,30 +26,11 @@ main {
 }
 
 .chisiamoTeam {
-    display: flex;
     width: 100vw;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.homeChisiamo {
-    display: flex;
-    flex-direction: column;
-    width: 100vw;
-    color: #C8A31A;
-    text-shadow: 3px 2px 1px #F7E1DC;
-    text-align: center;
-    font-size: 1.8rem;
-    font-weight: 700;
-    margin-bottom: 1rem;
 }
 
 .chisiamoTeam article{
-    display: flex;
-    flex-flow: row wrap;
     width: 100vw;
-    justify-content: space-around;
-    align-items: center;
     margin-top: 1rem;
 }
 
@@ -67,7 +40,6 @@ main {
     line-height: 1.4rem;
     color: #58555A;
 } 
-
 
 
 @media screen and (min-width: 768px) {
@@ -107,21 +79,17 @@ main {
         width: 60vw;
     }
 
-    .chisiamoTeam {
-        width: 90vw;
-        margin: auto;
-    }
-    
-    .homeChisiamo {
+    .chisiamoTeam{
         width: 100%;
     }
 
     .chisiamoTeam article{
-        flex-direction: column;
-        width: 40vw;
-        justify-content: space-around;
-        align-items: center;
         margin-top: 1.5rem;
+        width: 50%;
+    }
+
+    .chisiamoTeam h2{
+        width:80%;
     }
 
     .chisiamoTeam figure{
