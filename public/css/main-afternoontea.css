@@ -1,164 +1,84 @@
-main section {
-    padding-top: 5vh;
-    width: calc(100vw - 3rem);
-    padding-bottom: 2rem;
-}
-
-#first-section {
-    margin-top: 5vh;
-}
-
-#second-section {
-    margin-top: 0;
-    padding-top: 0;
-}
-
-main section figure{
-    display: none;
-}
-
-article.texto p {
-    font-size: 1rem;
-    line-height: 1.4rem;
+main {
+    padding-top: 7vh;
     text-align: center;
+}
+
+main .catalogo {
+    margin-bottom: 1rem;
+    position: relative;
     color: #58555A;
+    height: 30vh;
+    width: 100vw;
 }
 
-article.texto button  {
-    border: none;
-    background-color: transparent;
-    margin-top: 1rem;
-    text-align: center;
+.catalogo figure {
+    width: calc(100vw - 2rem);
+    opacity: 0.4;
+    position: absolute;
+    z-index: -1;
     width: 100%;
-    margin-bottom: 2rem;
 }
 
-article.texto button a{
+.catalogo article {
+    display: flex;
+    flex-direction: column;
+    width: 70vw;
+    line-height: 1.3rem;
+}
+
+main .catalogo button {
     border: none;
     background-color: #F7E1DC;
     color: #C8A31A;
     border-radius: 1rem;
     padding: 0.5rem 2rem;
     font-weight: 700;
-    margin-top: 1.3rem;
+    margin-top: 1rem;
     font-size: 0.9rem;
-    width: auto;
-    align-self: center;
-    text-decoration: none;
-    color: #58555A;
     transition: all .4s ease-in-out;
-}
-
-article.texto button:hover a{
-    background-color: #C8A31A;
-    color: #F7E1DC;
-    border-radius: 1.5rem;
-    padding: 0.5rem 2rem;
-}  
-
-article.texto .destacado {
-    margin-top: 2rem;
-    color: #C8A31A;
-    font-weight: 700;
+    align-self: center;
 }
 
 @media screen and (min-width: 768px) {
-    #first-section {
-        margin-top: 5vh;
-    }
-    
-    #second-section {
-        margin-top: 5vh;
-        padding-top: 0;
+    main {
+        padding-top: 0vh;
     }
 
-    main section {
-        margin-top: 5vh;
-        width: 90vw;
-        height: 50vh;
+    .catalogo figure {
+        width: 50%;
+        opacity: 1;
         position: relative;
+        z-index: 1;
     }
 
-    main section figure{
-        display: flex;
-        width: 45%;
-        z-index: -1;
-        border-radius: 1rem;
-        border: #C8A31A .05rem solid;
-        overflow: hidden;
-    }
-
-    main section article figure.img1{
-        position: absolute;
-        top: 0;
-        left: 0;
-    }
-
-    main section article figure.img2{
-        position: absolute;
-        bottom: 0;
-        right: 0;
-    }
-
-    main section article figure.img3{
-        position: absolute;
-        top: 0;
-        left: 0;
-    }
-
-    main section figure.img4{
-        position: absolute;
-        bottom: 0;
-        right: 0;
-    }
-
-    main section article.texto {
-        width: 60%;
-        box-shadow: -2px 1px 18px -3px rgba(0,0,0,0.64);
-        padding: 1rem;
-        border-radius: 1rem;
+    main .catalogo {
+        height: auto;
+        width: 100%;
         background-color: var(--rosa);
+        margin-bottom: 0;
     }
 
-    main h2.title {
-        font-size: 1.2rem;
+    .catalogo article {
+        width: 50%;
+    }
+
+    .catalogo article .title {
         text-transform: uppercase;
-        margin-bottom: 1.5rem;
-    }
-
-    article p {
-        font-size: .9rem;
-        line-height: 1.3rem;
-    }
-
-    article .destacado {
-        margin-top: 1rem;
+        font-size: 1.2rem;
     }
     
-    main article button  {
-        margin-top:1.5rem;
-    }
-    
+    main .catalogo button:hover {
+        background-color: #C8A31A;
+        color: #F7E1DC;
+        border-radius: 1.5rem;
+        padding: 0.5rem 2rem;
+    }  
+
 }
 
 @media screen and (min-width: 1200px) {
-    #first-section {
-        margin-top: 10vh;
-    }
-
-    main section {
-        margin-top: 7vh;
-        width: 70vw;
-        height: 100vh;
-    }
-
-    main section figure{
-        width: 45%;
-    }
-
-    article p {
-        font-size: 1rem;
-        line-height: 1.5rem;
+    .catalogo article {
+        padding: 1.5rem;
     }
 
 }

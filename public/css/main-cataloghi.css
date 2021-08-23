@@ -55,6 +55,7 @@ main .catalogo button {
         height: auto;
         width: 100%;
         background-color: var(--rosa);
+        margin-bottom: 0;
     }
 
     .catalogo article {

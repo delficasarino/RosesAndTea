@@ -20,6 +20,7 @@ article.informacion button  {
     margin-top: 2.5rem;
     text-align: center;
     width: 100%;
+
 }
 
 article.informacion button a{
@@ -38,13 +39,6 @@ article.informacion button a{
     transition: all .4s ease-in-out;
 }
 
-article.informacion button:hover a{
-    background-color: #C8A31A;
-    color: #F7E1DC;
-    border-radius: 1.5rem;
-    padding: 0.5rem 2rem;
-}  
-
 article.informacion .destacado {
     margin-top: 2rem;
     color: #C8A31A;
@@ -59,7 +53,7 @@ article.informacion .destacado {
         position: relative;
         height: auto;
         background-color: var(--rosa);
-        z-index: -1;
+        z-index: 1;
     }
     
     main section .img-tablet {
@@ -139,10 +133,6 @@ article.informacion .destacado {
 
     main section article.informacion {
         flex: 0 0 30%;
-/*         box-shadow: -2px 1px 18px -3px rgba(0,0,0,0.64);
-        padding: 1rem;
-        border-radius: 1rem;
-        background-color: var(--rosa); */
     }
 
     article.informacion p {
@@ -150,5 +140,11 @@ article.informacion .destacado {
         line-height: 1.5rem;
     }
 
+    article.informacion button:hover a{
+        background-color: #C8A31A;
+        color: #F7E1DC;
+        border-radius: 1.5rem;
+        padding: 0.5rem 2rem;
+    }
 
 }
