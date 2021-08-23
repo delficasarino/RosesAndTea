@@ -135,10 +135,13 @@
   }
 
 @media screen and (min-width: 768px){
+  .slideshow-container {
+    height: 50vh;
+  }
+
   /* Caption text */
   #text {
     line-height: 1.5rem;
-    top: 15vh;
   }
 
   #text h2{
@@ -158,25 +161,38 @@
 }
 
 @media screen and (min-width: 1200px){
+  .slideshow-container {
+    height: 80vh;
+    width: 100%;
+  }
+
+  .mySlides figure img {
+    max-height: none; 
+    max-width: 100%;
+    width: 100vw;
+  }
+
+  .dots {
+    bottom: 1rem;
+    }
   /* Caption text */
   #text {
     line-height: 2rem;
-    top: 15vw;
   }
 
   #text h2{
     margin-bottom: 3rem;
-    font-size: 2rem;
+    font-size: 1.8rem;
     letter-spacing: .3rem;
   }
 
   #text p{
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   }
 
   #text a{
     margin-top: 3rem;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     width: 20%;
     transition: all .4s ease-in-out;
   }

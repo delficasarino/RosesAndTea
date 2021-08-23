@@ -1,5 +1,5 @@
 main {
-    padding-top: 10vh;
+    padding-top: 7vh;
     text-align: center;
 }
 
@@ -7,11 +7,14 @@ main .catalogo {
     margin-bottom: 1rem;
     position: relative;
     color: #58555A;
+    height: 30vh;
 }
 
 .catalogo figure {
     width: calc(100vw - 2rem);
     opacity: 0.4;
+    position: absolute;
+    z-index: -1;
 }
 
 .catalogo figure img {
@@ -22,10 +25,6 @@ main .catalogo {
 .catalogo article {
     display: flex;
     flex-direction: column;
-    position: absolute;
-    top: 5vw;
-    left: 15vw;
-    z-index: 3;
     width: 70vw;
     line-height: 1.3rem;
 }
@@ -49,13 +48,19 @@ main .catalogo button {
     }
 
     .catalogo figure {
-        width: calc(100vw - 7rem);
+        width: calc(50vw - 2rem);
+        opacity: 1;
+        position: relative;
+        z-index: 1;
+    }
+
+    main .catalogo {
+        height: auto;
+        width: calc(100vw - 1rem);
     }
 
     .catalogo article {
-        top: 20vw;
-        left: 20vw;
-        width: 60vw;
+        width: calc(50vw - 1rem);
     }
     
     main .catalogo button:hover {
@@ -69,27 +74,20 @@ main .catalogo button {
 
 @media screen and (min-width: 1200px) {
     main {
-        padding-top: 4.37rem; 
+        padding-top: 10vh;
     }
 
     .catalogo figure {
-        width: 40vw;
-        opacity: 1;
+        width: calc(40vw - 2rem);
+    }
+
+    main .catalogo {
+        width: calc(100vw - 1rem);
     }
 
     .catalogo article {
-        display: flex;
-        position: initial;
-        width: 30vw;
-        line-height: 1.3rem;
-        align-self: center;
-        padding: 3rem;
+        width: calc(40vw - 1rem);
     }
 
-    main .catalogo button {
-        font-size: 1rem;
-        background-color: transparent;
-    }
-    
 
 }
