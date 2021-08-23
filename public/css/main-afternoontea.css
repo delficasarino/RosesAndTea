@@ -4,7 +4,7 @@ main section {
     padding-bottom: 2rem;
 }
 
-main section figure {
+main section figure{
     display: none;
 }
 
@@ -55,36 +55,88 @@ article.texto .destacado {
 
 @media screen and (min-width: 768px) {
     main section {
-        padding-top: 3vh;
-        width: 70vw;
+        margin-top: 5vh;
+        width: 90vw;
+        height: 50vh;
+        position: relative;
+    }
+
+    main section figure{
+        display: flex;
+        width: 45%;
+        z-index: -1;
+        border-radius: 1rem;
+        border: #C8A31A .05rem solid;
+        overflow: hidden;
+    }
+
+    main section article figure.img1{
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    main section article figure.img2{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+
+    main section article figure.img3{
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    main section figure.img4{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+
+    main section article.texto {
+        width: 60%;
+        box-shadow: -2px 1px 18px -3px rgba(0,0,0,0.64);
+        padding: 1rem;
+        border-radius: 1rem;
+        background-color: var(--rosa);
+    }
+
+    main h2.title {
+        font-size: 1.2rem;
+        text-transform: uppercase;
+        margin-bottom: 1.5rem;
+    }
+
+    article p {
+        font-size: .9rem;
+        line-height: 1.3rem;
+    }
+
+    article .destacado {
+        margin-top: 1rem;
+    }
+    
+    main article button  {
+        margin-top:1.5rem;
     }
     
 }
 
 @media screen and (min-width: 1200px) {
     main section {
-        padding-top: 10vh;
-        width: 80vw;
+        margin-top: 7vh;
+        width: 70vw;
+        height: 100vh;
     }
 
-    main section.informacion {
-        width: 40vw;
-        padding: 0 2rem;
-        align-self: center;
+    main section figure{
+        width: 45%;
     }
 
-    main section figure {
-        display: flex;
-        width: 20vw;
-        align-items: center;
-        margin-bottom: 1rem;
-
+    article p {
+        font-size: 1rem;
+        line-height: 1.5rem;
     }
 
-    main section img {
-        border-radius: 1rem;
-        border: #C8A31A .05rem solid;
-        width: 100%;
-    }
-    
 }

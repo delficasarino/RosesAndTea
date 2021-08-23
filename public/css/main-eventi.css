@@ -1,10 +1,10 @@
 main section {
-    padding-top: 4.37rem;
+    padding-top: 10vh;
     width: 90vw;
     padding-bottom: 2rem;
 }
 
-main section figure {
+main section .img, main section .img-tablet {
     display: none;
 }
 
@@ -53,29 +53,102 @@ article.informacion .destacado {
 
 @media screen and (min-width: 768px) {
     main section {
-        width: 70vw;
+        padding-top: 0vh;
+        margin-top: 5vh;
+        position: relative;
+        height: 50vh
     }
     
+    main section .img-tablet {
+        display: flex;
+    }
+
+    main section .img-tablet figure.img1{
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        width: 45%;
+        border-radius: 1rem;
+        border: #C8A31A .05rem solid;
+        overflow: hidden;
+    }
+
+    main section .img-tablet figure.img2{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        z-index: -1;
+        width: 45%;
+        border-radius: 1rem;
+        border: #C8A31A .05rem solid;
+        overflow: hidden;
+    }
+
+    main section .img-tablet figure.img3{
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: -1;
+        width: 45%;
+        border-radius: 1rem;
+        border: #C8A31A .05rem solid;
+        overflow: hidden;
+    }
+
+    main section .img-tablet figure.img4{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        z-index: -1;
+        width: 45%;
+        border-radius: 1rem;
+        border: #C8A31A .05rem solid;
+        overflow: hidden;
+    }
+
+    main section article.informacion {
+        flex: 0 0 50%;
+        box-shadow: -2px 1px 18px -3px rgba(0,0,0,0.64);
+        padding: 1rem;
+        border-radius: 1rem;
+        background-color: var(--rosa);
+    }
+
+    article.informacion .title {
+        font-size: 1.2rem;
+        text-transform: uppercase;
+        margin-bottom: 1.5rem;
+    }
+
+    article.informacion p {
+        font-size: .9rem;
+        line-height: 1.3rem;
+    }
+
+    article.informacion .destacado {
+        margin-top: 1rem;
+    }
+    
+    article.informacion button  {
+        margin-top:1.5rem;
+    }
 }
 
 @media screen and (min-width: 1200px) {
-    main section article.informacion {
-        width: 30vw;
-        padding: 0 2rem;
-        align-self: center;
+    main section {
+        margin-top: 7vh;
+        height: 100vh;
+        width: 70vw
     }
 
-    main section figure {
-        display: flex;
-        width: 20vw;
-        margin-bottom: 1rem;
-
+    main section .img-tablet figure.img1, main section .img-tablet figure.img2, main section .img-tablet figure.img3, main section .img-tablet figure.img4{
+        width: 40%;
     }
 
-    main section img {
-        border-radius: 1rem;
-        border: #C8A31A .05rem solid;
-        width: 100%;
+    article.informacion p {
+        font-size: 1rem;
+        line-height: 1.5rem;
     }
-    
+
 }

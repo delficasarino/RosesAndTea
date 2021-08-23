@@ -17,7 +17,7 @@
     justify-content: center;
     align-items: center;
     flex-direction:column;
-    z-index: 6;
+    z-index: 999;
 }
 
 #desktop:target .links {
