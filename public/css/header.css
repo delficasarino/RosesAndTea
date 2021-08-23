@@ -132,7 +132,7 @@
     #desktop .links a:hover {
         background-color: var(--rosa);
         color: var(--dorado);
-        border-radius: 1rem;
+        border-radius: 2rem;
     }
 
     #desktopLogo img{

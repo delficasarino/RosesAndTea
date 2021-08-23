@@ -74,8 +74,8 @@
 
 #text h2{
   font-size: 1.3rem;
-  margin-bottom: 2rem;
-  letter-spacing: .1rem;
+  margin-bottom: 1rem;
+/*   letter-spacing: .1rem; */
   color: #000
 }
 
@@ -83,7 +83,7 @@
   margin-top: 1.5rem;
   color: #C8A31A;
   background-color: #F7E1DC;
-  border-radius: 1rem;
+  border-radius: 2rem;
   padding: .3rem 1rem;
   border: none;
   text-decoration: none;
@@ -146,7 +146,6 @@
 
   #text h2{
     font-size: 1.8rem;
-    letter-spacing: .2rem;
   }
 
   #text p{
@@ -154,8 +153,8 @@
   }
 
   #text a{
-    font-size: 1.2rem;
-    width: 30%;
+    font-size: 1rem;
+    width: 25%;
   }
 
 }
@@ -183,7 +182,6 @@
   #text h2{
     margin-bottom: 3rem;
     font-size: 1.8rem;
-    letter-spacing: .3rem;
   }
 
   #text p{
@@ -192,8 +190,8 @@
 
   #text a{
     margin-top: 3rem;
-    font-size: 1.2rem;
-    width: 20%;
+    font-size: 1rem;
+    width: 15%;
     transition: all .4s ease-in-out;
   }
 
