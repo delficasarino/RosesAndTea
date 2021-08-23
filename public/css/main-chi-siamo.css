@@ -25,13 +25,8 @@
     text-align: center;
 }
 
-.chisiamoTeam {
-    width: 100vw;
-}
-
-.chisiamoTeam article{
-    width: 100vw;
-    margin-top: 1rem;
+.chisiamoTeam img{
+    margin-bottom: 1rem;
 }
 
 .chisiamoTeam p {

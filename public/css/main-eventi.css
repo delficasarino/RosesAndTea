@@ -53,14 +53,18 @@ article.informacion .destacado {
 
 @media screen and (min-width: 768px) {
     main section {
+        width: 100vw;
         padding-top: 0vh;
-        margin-top: 5vh;
+/*         margin-top: 5vh; */
         position: relative;
-        height: 50vh
+        height: auto;
+        background-color: var(--rosa);
+        z-index: -1;
     }
     
     main section .img-tablet {
         display: flex;
+        height: 85vh;
     }
 
     main section .img-tablet figure.img1{
@@ -68,9 +72,7 @@ article.informacion .destacado {
         top: 0;
         left: 0;
         z-index: -1;
-        width: 45%;
-        border-radius: 1rem;
-        border: #C8A31A .05rem solid;
+        width: 48%;
         overflow: hidden;
     }
 
@@ -79,9 +81,7 @@ article.informacion .destacado {
         bottom: 0;
         right: 0;
         z-index: -1;
-        width: 45%;
-        border-radius: 1rem;
-        border: #C8A31A .05rem solid;
+        width: 48%;
         overflow: hidden;
     }
 
@@ -90,9 +90,7 @@ article.informacion .destacado {
         top: 0;
         right: 0;
         z-index: -1;
-        width: 45%;
-        border-radius: 1rem;
-        border: #C8A31A .05rem solid;
+        width: 48%;
         overflow: hidden;
     }
 
@@ -101,18 +99,16 @@ article.informacion .destacado {
         bottom: 0;
         left: 0;
         z-index: -1;
-        width: 45%;
-        border-radius: 1rem;
-        border: #C8A31A .05rem solid;
+        width: 48%;
         overflow: hidden;
     }
 
     main section article.informacion {
         flex: 0 0 50%;
-        box-shadow: -2px 1px 18px -3px rgba(0,0,0,0.64);
+/*         box-shadow: -2px 1px 18px -3px rgba(0,0,0,0.64);
         padding: 1rem;
         border-radius: 1rem;
-        background-color: var(--rosa);
+        background-color: var(--rosa); */
     }
 
     article.informacion .title {
@@ -136,19 +132,23 @@ article.informacion .destacado {
 }
 
 @media screen and (min-width: 1200px) {
-    main section {
-        margin-top: 7vh;
-        height: 100vh;
-        width: 70vw
-    }
 
     main section .img-tablet figure.img1, main section .img-tablet figure.img2, main section .img-tablet figure.img3, main section .img-tablet figure.img4{
-        width: 40%;
+        width: 30%;
+    }
+
+    main section article.informacion {
+        flex: 0 0 30%;
+/*         box-shadow: -2px 1px 18px -3px rgba(0,0,0,0.64);
+        padding: 1rem;
+        border-radius: 1rem;
+        background-color: var(--rosa); */
     }
 
     article.informacion p {
         font-size: 1rem;
         line-height: 1.5rem;
     }
+
 
 }

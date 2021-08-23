@@ -6,8 +6,6 @@
     font-size: 1.3rem;
     font-weight: 700;
 /*     margin: 2rem 0 1rem 0; */
-    border-top: #F7E1DC solid 1rem;
-    border-bottom: #F7E1DC solid 1rem;
     padding: .5rem 0;
 }
 
@@ -43,8 +41,17 @@
         font-size: 1.5rem;
     }
 
+    #home-video {
+        border: #F7E1DC solid 1rem;
+/*         border-bottom: #F7E1DC solid 1rem; */
+    }
+
     #home-video figure video {
         width: 100vw;
+    }
+
+    #galerryGeneral {
+/*         border: #F7E1DC solid 1rem; */
     }
 
     #gallery img{

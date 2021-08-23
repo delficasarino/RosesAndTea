@@ -8,6 +8,7 @@ main .catalogo {
     position: relative;
     color: #58555A;
     height: 30vh;
+    width: 100vw;
 }
 
 .catalogo figure {
@@ -15,11 +16,7 @@ main .catalogo {
     opacity: 0.4;
     position: absolute;
     z-index: -1;
-}
-
-.catalogo figure img {
-    border-radius: 1rem;
-    border: #C8A31A .05rem solid;
+    width: 100%;
 }
 
 .catalogo article {
@@ -44,11 +41,11 @@ main .catalogo button {
 
 @media screen and (min-width: 768px) {
     main {
-        padding-top: 5vh;
+        padding-top: 0vh;
     }
 
     .catalogo figure {
-        width: calc(50vw - 2rem);
+        width: 50%;
         opacity: 1;
         position: relative;
         z-index: 1;
@@ -56,11 +53,17 @@ main .catalogo button {
 
     main .catalogo {
         height: auto;
-        width: calc(100vw - 1rem);
+        width: 100%;
+        background-color: var(--rosa);
     }
 
     .catalogo article {
-        width: calc(50vw - 1rem);
+        width: 50%;
+    }
+
+    .catalogo article .title {
+        text-transform: uppercase;
+        font-size: 1.2rem;
     }
     
     main .catalogo button:hover {
@@ -73,21 +76,8 @@ main .catalogo button {
 }
 
 @media screen and (min-width: 1200px) {
-    main {
-        padding-top: 10vh;
-    }
-
-    .catalogo figure {
-        width: calc(40vw - 2rem);
-    }
-
-    main .catalogo {
-        width: calc(100vw - 1rem);
-    }
-
     .catalogo article {
-        width: calc(40vw - 1rem);
+        padding: 1.5rem;
     }
-
 
 }
