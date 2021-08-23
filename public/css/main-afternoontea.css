@@ -4,6 +4,15 @@ main section {
     padding-bottom: 2rem;
 }
 
+#first-section {
+    margin-top: 5vh;
+}
+
+#second-section {
+    margin-top: 0;
+    padding-top: 0;
+}
+
 main section figure{
     display: none;
 }
@@ -54,6 +63,15 @@ article.texto .destacado {
 }
 
 @media screen and (min-width: 768px) {
+    #first-section {
+        margin-top: 5vh;
+    }
+    
+    #second-section {
+        margin-top: 5vh;
+        padding-top: 0;
+    }
+
     main section {
         margin-top: 5vh;
         width: 90vw;
@@ -124,6 +142,10 @@ article.texto .destacado {
 }
 
 @media screen and (min-width: 1200px) {
+    #first-section {
+        margin-top: 10vh;
+    }
+
     main section {
         margin-top: 7vh;
         width: 70vw;
