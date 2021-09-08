@@ -111,6 +111,7 @@
     #desktopLogo img{
         border-radius: 50%;
         max-width: 120px;
+        margin-top: .5rem;
     }
 }
 
@@ -137,6 +138,7 @@
 
     #desktopLogo img{
         max-width: 135px;
+        margin-top: .8rem;
     }
 }
 

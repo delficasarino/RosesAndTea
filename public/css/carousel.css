@@ -11,7 +11,7 @@
   display: none;
   position: relative;
   height: 100%;
-  background-color: #fff;
+  background-color: snow;
   align-items: center;
   justify-content: center;
 }
@@ -39,7 +39,7 @@
   top: 40%;
   width: auto;
   padding: 16px;
-  color: white;
+  color: snow;
   font-weight: bold;
   font-size: 18px;
   transition: 0.6s ease;
@@ -68,7 +68,7 @@
 }
 
 #text p{
-  color:#000;
+  color: #282828;
   width:100%;
 }
 
@@ -76,7 +76,7 @@
   font-size: 1.3rem;
   margin-bottom: 1rem;
 /*   letter-spacing: .1rem; */
-  color: #000
+  color: #282828
 }
 
 #text a{
@@ -84,10 +84,10 @@
   color: #C8A31A;
   background-color: #F7E1DC;
   border-radius: 2rem;
-  padding: .3rem 1rem;
+  padding: .3rem .5rem;
   border: none;
   text-decoration: none;
-  width: 50%;
+  width: 40%;
   text-align: center;
 }
 
@@ -126,12 +126,12 @@
   
   @-webkit-keyframes fade {
     from {opacity: .4}
-    to {opacity: 2}
+    to {opacity: 1}
   }
   
   @keyframes fade {
     from {opacity: .4}
-    to {opacity: 2}
+    to {opacity: 1}
   }
 
 @media screen and (min-width: 768px){
@@ -153,8 +153,9 @@
   }
 
   #text a{
+    margin-top: 3rem;
     font-size: 1rem;
-    width: 25%;
+    width: 20%;
   }
 
 }
@@ -189,7 +190,7 @@
   }
 
   #text a{
-    margin-top: 3rem;
+    margin-top: 3.5rem;
     font-size: 1rem;
     width: 15%;
     transition: all .4s ease-in-out;
