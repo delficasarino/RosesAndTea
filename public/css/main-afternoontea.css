@@ -1,94 +1,229 @@
-main {
-    padding-top: 7vh;
-    text-align: center;
-}
-
-main .catalogo {
-    margin-bottom: 1rem;
-    position: relative;
-    color: #58555A;
-    height: auto;
+main  {
+    padding-top: 9vh;
     width: 100vw;
 }
 
-.catalogo figure {
-    width: calc(100vw - 2rem);
-    opacity: 0.4;
+main section h2 {
+    width: 50%;
+    position: relative;
+}
+
+main section h2::before {
+    content: "";
+    background-color: var(--rosa);
+    width: 2rem;
+    height: 1rem;
+    display: flex;
     position: absolute;
-    z-index: -1;
-    width: 100%;
+    left: -10vw;
+}
+
+main section h2::after {
+    content: "";
+    background-color: var(--rosa);
+    width: 2rem;
+    height: 1rem;
+    display: flex;
+    position: absolute;
+    right: -10vw;
+}
+
+article.informacion p {
+    font-size: 1rem;
+    line-height: 1.4rem;
+    text-align: center;
+    width: 80%;
+}
+
+main section .hidemobile {
     display: none;
 }
 
-.catalogo article {
-    display: flex;
-    flex-direction: column;
-    width: 70vw;
-
+#gallery {
+    display: grid;
+    grid-template-columns: 40% 40%; 
+    grid-template-rows: auto auto; 
+    margin-bottom: .5rem;
 }
 
-.catalogo article .title{
+#gallery img {
+    padding: .2rem
+}
+
+#banner .destacado {
     margin-top: 1rem;
-    line-height: 2.5rem
+    text-align: center;
+    width: 70%;
+    line-height: 1.5rem;
 }
 
-main .catalogo button {
+article.informacion button  {
+    border: none;
+    background-color: transparent;
+    margin-top: 2.5rem;
+    text-align: center;
+    width: 100%;
+}
+
+article.informacion button a{
     border: none;
     background-color: #F7E1DC;
     color: #C8A31A;
     border-radius: 1rem;
     padding: 0.5rem 2rem;
     font-weight: 700;
-    margin-top: 1rem;
+    margin-top: 1.3rem;
     font-size: 0.9rem;
-    transition: all .4s ease-in-out;
+    width: auto;
     align-self: center;
+    text-decoration: none;
+    color: #58555A;
+    transition: all .4s ease-in-out;
+}
+
+#banner .destacado {
+    margin: 3rem 0; 
+    color: var(--dorado)
 }
 
 @media screen and (min-width: 768px) {
-    main {
-        padding-top: 0vh;
+    main  {
+        padding-top: 7vh;
+        width: 100vw;
+        background-color: #F7E1DC;
+        padding-bottom: 2rem;
     }
 
-    .catalogo figure {
-        width: 50%;
-        opacity: 1;
-        position: relative;
-        z-index: 1;
-        display: flex;
-    }
+    #eventi {
+        width: 90%
+    } 
 
-    main .catalogo {
-        height: auto;
+    main .titleh2 {
         width: 100%;
-        background-color: var(--rosa);
-        margin-bottom: 0;
+        margin-bottom: 1rem;
     }
 
-    .catalogo article {
-        width: 50%;
-        padding: 0 1.5rem;    
+    main section h2 {
+        width: 30%;
     }
 
-    .catalogo article .title {
-        text-transform: uppercase;
-        font-size: 1.2rem;
-        margin-top: 0;
-        margin-bottom: .5rem;
+    main section h2::before {
+        background-color: var(--dorado);
+        width: 4.5rem;
+        height: 1rem;
     }
     
-    main .catalogo button:hover {
+    main section h2::after {
+        background-color: var(--dorado);
+        width: 4.5rem;
+        height: 1rem;
+    }
+
+    #gallery {
+        grid-template-columns: 50% 50%; 
+        margin-bottom: 0rem;
+        flex: 1 0 40%;
+    }
+    
+    main section article.informacion {
+        flex: 0 0 50%;
+    }
+
+    article.informacion p {
+        width: 90%;
+    }
+
+    article.informacion .title {
+        font-size: 1.2rem;
+        text-transform: uppercase;
+        margin-bottom: 1.5rem;
+    }
+
+    article.informacion p {
+        font-size: .9rem;
+        line-height: 1.3rem;
+    }
+
+    article.informacion .destacado {
+        margin-top: 1rem;
+    }
+    
+    article.informacion button  {
+        margin-top:1.5rem;
+    }
+
+    #banner {
+        background-image: url(../img/eventi/evento1.jpeg);
+        background-size: cover;
+        background-attachment: fixed;
+        height: 25vh;
+        margin: 2rem 0;
+    }
+
+    #banner .destacado {
+        color: #282828;
+        line-height: 1.8rem;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    main  {
+        padding-top: 11vh;
+        width: 100%;
+    }
+
+    #eventi {
+        width: 70%
+    } 
+
+    #gallery {
+        margin-top: 1rem;
+        grid-template-columns: 50% 50%; 
+        margin-bottom: 0rem;
+        flex: 1 0 40%
+    }
+    
+    main section h2 {
+        width: 20%;
+        position: relative;
+    }
+
+    main section h2::before {
+        background-color: var(--dorado);
+        width: 8rem;
+        height: 1rem;
+    }
+    
+    main section h2::after {
+        background-color: var(--dorado);
+        width: 8rem;
+        height: 1rem;
+    }
+
+    main section article.informacion {
+        flex: 0 0 50%;
+    }
+
+    article.informacion p {
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+
+    article.informacion button:hover a{
         background-color: #C8A31A;
         color: #F7E1DC;
         border-radius: 1.5rem;
         padding: 0.5rem 2rem;
-    }  
-
-}
-
-@media screen and (min-width: 1200px) {
-    .catalogo article {
-        padding: 1.5rem;
     }
 
+    #banner {
+        height: 60vh;
+        width: 100%;
+    }
+
+    #banner .destacado {
+        width: 50%;
+        font-size: 1.3rem;
+        line-height: 2.3rem;
+    }
 }
