@@ -1,0 +1,103 @@
+main  {
+    padding-top: 9vh;
+    width: 100vw;
+}
+
+main section h2 {
+    position: relative;
+}
+
+main section h2::before {
+    content: "";
+    background-color: var(--rosa);
+    width: 2rem;
+    height: 1rem;
+    display: flex;
+    position: absolute;
+    left: -10vw;
+}
+
+main section h2::after {
+    content: "";
+    background-color: var(--rosa);
+    width: 2rem;
+    height: 1rem;
+    display: flex;
+    position: absolute;
+    right: -10vw;
+}
+
+main #icons {
+    width: 100%;
+}
+
+main i{
+    color: var(--dorado);
+    font-size: 1.5rem;
+    margin: .5rem 0 1.8rem 0;
+}
+
+main p {
+    margin-bottom: 1rem;
+    width: 70%;
+    text-align: center;
+}
+
+main #map {
+    width: 80vw
+}
+
+
+@media screen and (min-width: 768px){
+    main  {
+        padding-top: 7vh;
+        width: 100vw;
+        background-color: #F7E1DC;
+    }
+
+    main section h2::before {
+        background-color: var(--dorado);
+        width: 4.5rem;
+        height: 1rem;
+    }
+    
+    main section h2::after {
+        background-color: var(--dorado);
+        width: 4.5rem;
+        height: 1rem;
+    }
+
+    main iframe {
+        width: 70%
+    }
+}
+
+@media screen and (min-width: 1200px){
+    main  {
+        padding-top: 11vh;
+        width: 100%;
+    }
+
+    main section h2::before {
+        background-color: var(--dorado);
+        width: 8rem;
+        height: 1rem;
+    }
+    
+    main section h2::after {
+        background-color: var(--dorado);
+        width: 8rem;
+        height: 1rem;
+    }
+
+    main i{
+        font-size: 2rem;
+        margin: 1rem 0 1.8rem 0;
+    }
+
+    main iframe {
+        width: 50%;
+        margin-bottom: 2rem;
+        border-radius: 2rem;
+    }
+}
