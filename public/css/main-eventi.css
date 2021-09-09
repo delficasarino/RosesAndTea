@@ -1,17 +1,60 @@
-main section {
-    padding-top: 10vh;
-    width: 90vw;
-    padding-bottom: 2rem;
+main  {
+    padding-top: 9vh;
+    width: 100vw;
 }
 
-main section .img, main section .img-tablet {
-    display: none;
+main section h2 {
+    width: 50%;
+    position: relative;
+}
+
+main section h2::before {
+    content: "";
+    background-color: var(--rosa);
+    width: 2rem;
+    height: 1rem;
+    display: flex;
+    position: absolute;
+    left: -10vw;
+}
+
+main section h2::after {
+    content: "";
+    background-color: var(--rosa);
+    width: 2rem;
+    height: 1rem;
+    display: flex;
+    position: absolute;
+    right: -10vw;
 }
 
 article.informacion p {
     font-size: 1rem;
     line-height: 1.4rem;
     text-align: center;
+    width: 80%;
+}
+
+main section .hidemobile {
+    display: none;
+}
+
+#gallery {
+    display: grid;
+    grid-template-columns: 40% 40%; 
+    grid-template-rows: auto auto; 
+    margin-bottom: .5rem;
+}
+
+#gallery img {
+    padding: .2rem
+}
+
+#banner .destacado {
+    margin-top: 1rem;
+    text-align: center;
+    width: 70%;
+    line-height: 1.5rem;
 }
 
 article.informacion button  {
@@ -20,7 +63,6 @@ article.informacion button  {
     margin-top: 2.5rem;
     text-align: center;
     width: 100%;
-
 }
 
 article.informacion button a{
@@ -39,70 +81,55 @@ article.informacion button a{
     transition: all .4s ease-in-out;
 }
 
-article.informacion .destacado {
-    margin-top: 2rem;
-    color: #C8A31A;
-    font-weight: 700;
+#banner .destacado {
+    margin-top: 3rem;
+    color: var(--dorado)
 }
 
 @media screen and (min-width: 768px) {
-    main section {
+    main  {
+        padding-top: 7vh;
         width: 100vw;
-        padding-top: 0vh;
-/*         margin-top: 5vh; */
-        position: relative;
-        height: auto;
-        background-color: var(--rosa);
-        z-index: 1;
+        background-color: #F7E1DC;
+    }
+
+    #eventi {
+        width: 90%
+    } 
+
+    main .titleh2 {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    main section h2 {
+        width: 30%;
+    }
+
+    main section h2::before {
+        background-color: var(--dorado);
+        width: 4.5rem;
+        height: 1rem;
     }
     
-    main section .img-tablet {
-        display: flex;
-        height: 85vh;
+    main section h2::after {
+        background-color: var(--dorado);
+        width: 4.5rem;
+        height: 1rem;
     }
 
-    main section .img-tablet figure.img1{
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: -1;
-        width: 48%;
-        overflow: hidden;
+    #gallery {
+        grid-template-columns: 50% 50%; 
+        margin-bottom: 0rem;
+        flex: 1 0 40%;
     }
-
-    main section .img-tablet figure.img2{
-        position: absolute;
-        bottom: 0;
-        right: 0;
-        z-index: -1;
-        width: 48%;
-        overflow: hidden;
-    }
-
-    main section .img-tablet figure.img3{
-        position: absolute;
-        top: 0;
-        right: 0;
-        z-index: -1;
-        width: 48%;
-        overflow: hidden;
-    }
-
-    main section .img-tablet figure.img4{
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        z-index: -1;
-        width: 48%;
-        overflow: hidden;
-    }
-
+    
     main section article.informacion {
         flex: 0 0 50%;
-/*         box-shadow: -2px 1px 18px -3px rgba(0,0,0,0.64);
-        padding: 1rem;
-        border-radius: 1rem;
-        background-color: var(--rosa); */
+    }
+
+    article.informacion p {
+        width: 90%;
     }
 
     article.informacion .title {
@@ -123,16 +150,57 @@ article.informacion .destacado {
     article.informacion button  {
         margin-top:1.5rem;
     }
+
+    #banner {
+        background-image: url(../img/eventi/evento1.jpeg);
+        background-size: cover;
+        background-attachment: fixed;
+        height: 25vh;
+        margin-top: 2rem;
+    }
+
+    #banner .destacado {
+        color: #282828;
+        line-height: 1.8rem;
+    }
 }
 
 @media screen and (min-width: 1200px) {
+    main  {
+        padding-top: 11vh;
+        width: 100%;
+    }
 
-    main section .img-tablet figure.img1, main section .img-tablet figure.img2, main section .img-tablet figure.img3, main section .img-tablet figure.img4{
-        width: 30%;
+    #eventi {
+        width: 70%
+    } 
+
+    #gallery {
+        margin-top: 1rem;
+        grid-template-columns: 50% 50%; 
+        margin-bottom: 0rem;
+        flex: 1 0 40%
+    }
+    
+    main section h2 {
+        width: 20%;
+        position: relative;
+    }
+
+    main section h2::before {
+        background-color: var(--dorado);
+        width: 8rem;
+        height: 1rem;
+    }
+    
+    main section h2::after {
+        background-color: var(--dorado);
+        width: 8rem;
+        height: 1rem;
     }
 
     main section article.informacion {
-        flex: 0 0 30%;
+        flex: 0 0 50%;
     }
 
     article.informacion p {
@@ -146,5 +214,17 @@ article.informacion .destacado {
         border-radius: 1.5rem;
         padding: 0.5rem 2rem;
     }
+
+    #banner {
+        height: 60vh;
+        width: 100%;
+    }
+
+    #banner .destacado {
+        width: 50%;
+        font-size: 1.3rem;
+        line-height: 2.3rem;
+    }
+    
 
 }

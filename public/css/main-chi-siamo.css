@@ -2,6 +2,7 @@
     border-radius: 50%;
     width: 40vw;
     border: #C8A31A .05rem solid;
+    margin-top: .5rem;
 }
 
 .chisiamoFlorencia {
@@ -21,8 +22,8 @@
 
 .chisiamoTeam .destacado, .chisiamoFlorencia .destacado {
     color: #C8A31A;
-    font-weight: 700;
     text-align: center;
+    font-size: 1.2rem;
 }
 
 .chisiamoTeam img{
