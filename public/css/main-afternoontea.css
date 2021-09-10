@@ -94,7 +94,7 @@ article.informacion button a{
         padding-bottom: 2rem;
     }
 
-    #eventi {
+    .eventi {
         width: 90%
     } 
 
@@ -172,7 +172,7 @@ article.informacion button a{
         width: 100%;
     }
 
-    #eventi {
+    .eventi {
         width: 70%
     } 
 
