@@ -1,5 +1,4 @@
-.img-rounded {
-    border-radius: 50%;
+.img-border {
     width: 40vw;
     border: #C8A31A .05rem solid;
     margin-top: .5rem;
@@ -39,12 +38,12 @@
 
 
 @media screen and (min-width: 768px) {
-    .img-rounded {
-        width: 20vw;
+
+    .img-border {
         transition: all .4s ease-in-out;
     }
 
-    .img-rounded:hover {
+    .img-border:hover {
         transform: scale(1.1);
     }
 
@@ -52,27 +51,51 @@
         padding-top: 4.5rem;
     }
 
-    .chisiamoFlorencia article p{
-        margin: .9rem 0;
-        width: 80vw;
+    .florencia-chisiamo{
+        width: 65%
     }
 
-    .chisiamoTeam article{
-        margin-top: 1.5rem;
+    .chisiamoFlorencia figure {
+        width: 30%;
     }
+
+    .chisiamoFlorencia {
+        padding: 2.3rem 1.5rem;
+        font-size: .8rem;    
+    }
+
+    .florencia-phrases {
+        width: 100%;
+    }
+
+    .chisiamoTeam figure {
+        width: 20%;
+    }
+
 }
 
 @media screen and (min-width: 1200px) {
+
+    .img-border {
+        transition: all .4s ease-in-out;
+    }
+    
     .chisiamoFlorencia {
         width: 100%;
     }
 
-    .img-rounded {
-        width: 13vw;
+    .florencia-chisiamo{
+        width: 60%;
+        margin-left: 1.5rem;
     }
 
-    .chisiamoFlorencia article p{
-        width: 60vw;
+    .chisiamoFlorencia figure {
+        width: 14%;
+    }
+
+    .chisiamoFlorencia {
+        padding: 4.3rem 1.5rem;
+        font-size: 1rem;    
     }
 
     .chisiamoTeam{
@@ -90,5 +113,9 @@
 
     .chisiamoTeam figure{
         margin-bottom: 1rem;
+    }
+
+    .chisiamoTeam figure {
+        width: 15%;
     }
 }

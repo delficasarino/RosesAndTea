@@ -72,6 +72,18 @@
 }
 
 @media screen and (min-width: 768px){
+
+    #mobile {
+        height: 7vh
+    }
+
+    #logoMobile img {
+        max-width: 15vw;
+    }
+}
+
+@media screen and (min-width:1200px){
+
     #mobile {
         display: none;
     }
@@ -84,20 +96,22 @@
         display: flex;
         width: calc(100vw - 3rem);
         position: relative;
-        height: 7vh;
         margin-top: .3rem;
+        height: 13vh;
     }
 
     #desktop .links {
-        width: 40%;
-        height: 7vh;
-        z-index: 10;
+        height: 13vh;
+        width: 40%
     }
 
     #desktop .links a {
+        font-size: .9rem;
+        padding: .8rem;
         text-decoration: none;
-        font-size: .75rem;
-        padding: .5rem
+        padding: .5rem;
+        transition: all .4s ease-in-out;
+        z-index: 10;
     }
 
     #desktopLogo{
@@ -106,34 +120,6 @@
         left: 0;
         right: 0;
         z-index: 5;
-    }
-
-    #desktopLogo img{
-        border-radius: 50%;
-        max-width: 120px;
-        margin-top: .5rem;
-    }
-
-    .active {
-        background-color: var(--rosa);
-        color: var(--dorado);
-        border-radius: 2rem;
-    }
-}
-
-@media screen and (min-width:1200px){
-    #desktop {
-        height: 13vh;
-    }
-
-    #desktop .links {
-        height: 13vh;
-    }
-
-    #desktop .links a {
-        font-size: .9rem;
-        transition: all .4s ease-in-out;
-        padding: .8rem
     }
 
     #desktop .links a:hover {
@@ -145,6 +131,13 @@
     #desktopLogo img{
         max-width: 135px;
         margin-top: .8rem;
+        border-radius: 50%;
+    }
+
+    .active {
+        background-color: var(--rosa);
+        color: var(--dorado);
+        border-radius: 2rem;
     }
 }
 

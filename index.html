@@ -5,6 +5,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Roses & Tea | Bienvenidos </title>
+		<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 		<link rel="stylesheet" href="./public/css/reset.css">
 		<link rel="stylesheet" href="./public/css/normalize.css">
@@ -14,7 +15,9 @@
 		<link rel="stylesheet" href="./public/css/header.css">
 		<link rel="stylesheet" href="./public/css/index.css">
 		<link rel="stylesheet" href="./public/css/carousel.css">
+		<link rel="stylesheet" href="./public/css/carouselIndex.css">
 		<link rel="stylesheet" href="./public/css/footer.css">
+		
 	</head>
 	<body>
 		<header class="df rw wp jcc aic">
@@ -144,27 +147,24 @@
 				<h2 class="localeTitle lora-medium df aic jcc">
 					IL NOSTRO LOCALE
 				</h2>
-				<article id="locale" class="df rw wp jcc aic">
-					<section id="gallery" class="df jcc aic">
-							<figure class="pic-2">
-								<img src="./public/img/home/locale/Foto local 2.jpeg" alt="Nostro locale">
-							</figure>
-							<figure class="pic-3">
-								<img src="./public/img/home/locale/Foto local 3.jpeg" alt="Nostro locale">
-							</figure>
-							<figure class="pic-4">
-								<img src="./public/img/home/locale/Foto local.jpeg" alt="Nostro locale">
-							</figure>
-							<figure class="pic-5">
-								<img src="./public/img/home/locale/Foto local 3.jpeg" alt="Nostro locale">
-							</figure>
-					</section>
+				<section id="locale" class="df rw wp jcc aic">
 					<section id="localetext" class="df cl jcc aic">
 						<p>Un locale istorico del 1600 nel qualdrilatero Romano di Torino</p>
 						<p>Il Palazzo Frichignono di Castellengo a Torino si trova in via San Dalmazzo 7, è un palazzo secentesco con pregevoli decorazioni di gusto barocco. L’edificio, acquistato dai Frichignono di Castellengo nella seconda metà del Seicento, In questa locazione si trovava prima la antica Gastronomia Fratelli Leombruni.</p>
 					</section>
-				<article>
-			</section>
+				</section>
+					<div #swiperRef="" class="swiper mySwiper">
+						<div class="swiper-wrapper">
+						  <div class="swiper-slide"><img src="./public/img/home/locale/Foto local 2.jpeg" alt="Nostro locale"></div>
+						  <div class="swiper-slide"><img src="./public/img/home/locale/Foto local 2.jpeg" alt="Nostro locale"></div>
+						  <div class="swiper-slide"><img src="./public/img/home/locale/Foto local 2.jpeg" alt="Nostro locale"></div>
+						  <div class="swiper-slide"><img src="./public/img/home/locale/Foto local 2.jpeg" alt="Nostro locale"></div>
+						  <div class="swiper-slide"><img src="./public/img/home/locale/Foto local 2.jpeg" alt="Nostro locale"></div>
+
+						</div>
+						<div class="swiper-button-next"></div>
+						<div class="swiper-button-prev"></div>
+					  </div>
 		</main>
 		<footer class="df cl jcc aic">
 			<section id="footer-first-section" class="df cl jcc aic t-rw t-wp">
@@ -197,6 +197,9 @@
 				<p>rosesandteaofficial.com</p>
 			</section>
 		</footer> 
-		<script src="./public/js/carousel.js" type="text/javascript"></script>	
+		<script src="./public/js/carousel.js" type="text/javascript"></script>
+		<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+		<script src="./public/js/carouselIndex.js" type="text/javascript"></script>
+
 	</body>
 </html>

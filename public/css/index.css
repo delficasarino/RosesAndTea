@@ -136,5 +136,7 @@
         width:80%;
     }
 
-
+    .fondo {
+        background-color: red
+    }
 }
